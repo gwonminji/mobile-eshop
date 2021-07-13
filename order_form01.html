@@ -1,0 +1,777 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 주문/결제 -->
+        <div class="layer type-detail order-form">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">주문/결제</p>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <!-- 단계 -->
+                <div class="step-wrap">
+                    <p class="tit">주문/결제 단계</p>
+                    <div class="step-box">
+                        <!--
+                            완료 단계인 경우 : checked 클래스 추가
+                            현재 단계인 경우 : active 클래스 추가
+                        -->
+                        <div class="step step01">
+                            <span class="round checked"><span></span></span>
+                            <p class="txt-step">STEP 01</p>
+                            <p class="txt">장바구니</p>
+                        </div>
+                        <div class="step step02">
+                            <span class="round active"><span></span></span>
+                            <p class="txt-step">STEP 02</p>
+                            <p class="txt">주문/결제</p>
+                        </div>
+                        <div class="step step03">
+                            <span class="round"><span></span></span>
+                            <p class="txt-step">STEP 03</p>
+                            <p class="txt">주문완료</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //단계 -->
+                <div class="card-list-wrap type-wide">
+                    <!-- 주문/결제 이용안내 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <p class="tit">주문/결제 이용안내</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="important-li">
+                                <li class="li">주문 상품을 수정하실 때는 장바구니로 이동하셔서 정보를 수정하시면 됩니다.</li>
+                                <li class="li">사용한 쿠폰은 취소 시 반환, 복원되지 않고 소멸되오니, 주의하시길 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주문/결제 이용안내 -->
+                    <!-- 주문 상품 리스트 -->
+                    <div class="card goods-info">
+                        <div class="card-body">
+                            <div class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <div class="detail">
+                                        <p class="goods">풀 레이스 더블윙 브라[A~E컵](SBRD061)</p>
+                                        <p class="opt-info">
+                                            <span class="txt-info01">옵션 : 블랙/75/C</span>
+                                            <span class="txt-info02">수량 : 1개</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-info02">
+                                <div class="row left">
+                                    <span class="tit">구매예정 금액</span>
+                                    <span class="price">990,000원</span>
+                                </div>
+                                <div class="row right">
+                                    <span class="tit">적립 예정 포인트</span>
+                                    <span class="price">미대상 상품</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card goods-info">
+                        <div class="card-body">
+                            <div class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <div class="detail">
+                                        <p class="goods">풀 레이스 더블윙 브라[A~E컵](SBRD061)</p>
+                                        <p class="opt-info">
+                                            <span class="txt-info01">옵션 : 블랙/75/C</span>
+                                            <span class="txt-info02">수량 : 1개</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-info02">
+                                <div class="row left">
+                                    <span class="tit">구매예정 금액</span>
+                                    <span class="price">990,000원</span>
+                                </div>
+                                <div class="row right">
+                                    <span class="tit">적립 예정 포인트</span>
+                                    <span class="price">1,000 pt</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //주문 상품 리스트-->
+                    <!-- 주문 가격 정보 -->
+                    <div class="card price-info">
+                        <div class="card-body">
+                            <ul class="order-price-li">
+                                <div class="li"><span class="left">총 상품 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                                <div class="li"><span class="left">+ 배송비</span><span class="right"><span class="bold">0</span> 원</span></div>
+                            </ul>
+                            <ul class="order-price-li type02">
+                                <div class="li"><span class="left">총 결제 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주문 가격 정보 -->      
+                    <!-- 할인/혜택 안내 -->
+                    <div class="card important">
+                        <div class="card-body">
+                            <ul class="important-li02">
+                                <li class="li">할인/혜택 사용에서 쿠폰, 포인트를 사용하시면 금액이 달라집니다.</li>
+                                <li class="li">포인트 적립이 적립예정포인트와 상이할 수 있습니다.</li>
+                                <li class="li">자세한 사항은 1:1 문의로 문의바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //할인/혜택 안내 -->
+                    <!-- 주문자 정보 -->
+                    <div class="card u-info">
+                        <div class="card-head">
+                            <p class="tit">주문자 정보</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="u-list">
+                                <li class="li"><span class="left">주문자</span>홍길동</li>
+                                <li class="li"><span class="left">휴대폰</span>010-0000-0000</li>
+                                <li class="li"><span class="left">이메일</span>000@00.com</li>
+                                <li class="li"><span class="left">주문자 주소</span>서울 금천구 가산디지털1로 128 에스티엑스브이타워 506-2호</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주문자 정보 -->
+                    <!-- 개인정보 수집 및 이용약관 : 비회원일 경우에만 노출 -->
+                    <!-- <div class="card terms">
+                        <div class="card-head">
+                            <p class="tit">개인정보 수집 및 이용약관</p>
+                        </div>
+                        <div class="card-body">
+                            <div id="content" class="ta-cont">
+                                <p class="txt-num">1. 목적</p>
+                                <p class="txt">
+                                    회사가 고객의 개인정보를 수집하는 것은 원활한 서비스 제공을 하기 위해서 입니다. 단, 고객이 서비스 혜택 정보 제공을 원치 않는다는 의사를 명확히 밝히는 경우 정보 수집을 하지 않으며,
+                                    이 경우 정보 미제공으로 인해 발생되는 불이익에 대해서는 회사가 책임지지 않습니다.</p>
+                                <p class="txt-num">2. 항목</p>
+                            </div>
+                            <div class="cb-box">
+                                <input type="checkbox" id="cb-terms" class="cb-square"><label for="cb-terms">이용 약관에 동의합니다.</label>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- //개인정보 수집 및 이용약관 -->
+                    <!-- 배송 정보 -->
+                    <div class="card addr-info">
+                        <div class="card-head">
+                            <p class="tit">배송 정보</p>
+                            <div class="right-box">
+                                <input type="checkbox" id="cb01" class="cb-square"><label for="cb01">주문자 정보와 동일</label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="tab-wrap">
+                                <ul class="tabs">
+                                    <li class="active"><span>기본 주소</span></li><!-- 현재탭 활성화시 active 클래스 추가 -->
+                                    <li><span>새로운 주소</span></li>
+                                </ul>
+                                <div class="tab-container">
+                                    <!-- 기본 주소 -->
+                                    <div class="tab-content active"><!-- 현재탭 활성화시 active 클래스 추가 -->
+                                        <div class="ip-box-wrap">
+                                            <p class="tit">받으시는 분 <span class="important">*</span></p>
+                                            <div class="form-box">
+                                                <input type="text" class="ip-text" value="">
+                                            </div>
+                                            <p class="tit">배송지 주소 <span class="important">*</span></p>
+                                            <div class="form-box">
+                                                <div class="btn-box">
+                                                    <input type="text" class="ip-text" readonly>
+                                                    <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                                </div>
+                                                <input type="text" class="ip-text" readonly>
+                                                <input type="text" class="ip-text" readonly>
+                                            </div>
+                                            <p class="tit">연락처 <span class="important">*</span></p>
+                                            <div class="form-box num">
+                                                <select name="" id="" class="ip-text so">
+                                                    <option value="010">010</option>
+                                                    <option value="011">011</option>
+                                                </select>
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text" value="">
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text" value="">
+                                            </div>
+                                            <p class="tit">일반 전화</p>
+                                            <div class="form-box num">
+                                                <select name="" id="" class="ip-text so">
+                                                    <option value="02">02</option>
+                                                    <option value="031">031</option>
+                                                    <option value="032">032</option>
+                                                </select>
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text" value="">
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text" value="">
+                                            </div>
+                                            <p class="tit">배송 메모</p>
+                                            <div class="form-box">
+                                                <textarea name="" id="content" class="ta-cont"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //기본 주소-->
+                                    <!-- 새로운 주소 -->
+                                    <div class="tab-content">
+                                        <div class="ip-box-wrap">
+                                            <p class="tit">받으시는 분 <span class="important">*</span></p>
+                                            <div class="form-box">
+                                                <input type="text" class="ip-text">
+                                            </div>
+                                            <p class="tit">배송지 주소 <span class="important">*</span></p>
+                                            <div class="form-box">
+                                                <div class="btn-box">
+                                                    <input type="text" class="ip-text" readonly>
+                                                    <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                                </div>
+                                                <input type="text" class="ip-text" readonly>
+                                                <input type="text" class="ip-text" readonly>
+                                            </div>
+                                            <p class="tit">연락처 <span class="important">*</span></p>
+                                            <div class="form-box num">
+                                                <select name="" id="" class="ip-text so">
+                                                    <option value="010">010</option>
+                                                </select>
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text">
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text">
+                                            </div>
+                                            <p class="tit">일반 전화</p>
+                                            <div class="form-box num">
+                                                <select name="" id="" class="ip-text so">
+                                                    <option value="02">02</option>
+                                                </select>
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text">
+                                                <span class="dash"></span>
+                                                <input type="text" class="ip-text">
+                                            </div>
+                                            <p class="tit">배송 메모</p>
+                                            <div class="form-box">
+                                                <textarea name="" id="content" class="ta-cont"></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- //새로운 주소-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //배송 정보 -->
+                    <!-- 할인/혜택 -->
+                    <div class="card sale">
+                        <div class="card-head">
+                            <p class="tit">할인/혜택</p>
+                            <div class="right-box">
+                                <button type="button" class="ico-question" onclick="openCommDialog('couponguideLayer', '', '')">쿠폰조회/적용 방법<span></span></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="tit">총 상품 금액</p>
+                                <div class="form-box full">
+                                    <input type="text" class="ip-text" value="41,000"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box"></div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">상품쿠폰 할인</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="0"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box">
+                                    <button type="button" class="btn black" onclick="openCommDialog('couponLayer01', '', '')"><span>쿠폰조회/적용</span></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">장바구니쿠폰<br>할인</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="0"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box">
+                                    <button type="button" class="btn red" onclick="openCommDialog('couponLayer02', '', '')"><span>쿠폰조회/적용</span></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">포인트 사용</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="1,000"><span class="txt">P</span>
+                                </div>
+                                <div class="right-box">
+                                    <input type="checkbox" id="cb02" class="cb-square"><label for="cb02">모두 사용</label>
+                                </div>
+                            </div>
+                            <p class="txt-point">사용 가능한 포인트: <span>1,000</span> P</p>
+                        </div>
+                    </div>
+                    <!-- //할인/혜택 -->
+                    <!-- 총 판매가 -->
+                    <div class="card price-info type02">
+                        <div class="card-head">
+                            <p class="tit">총 판매가</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="order-price-li">
+                                <div class="li"><span class="left">총 상품 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                                <div class="li"><span class="left">+ 배송비</span><span class="right"><span class="bold">0</span> 원</span></div>
+                            </ul>
+                            <ul class="order-price-li type02">
+                                <div class="li"><span class="left">총 결제 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //총 판매가 -->
+                    <!-- 쿠폰/포인트 사용안내 -->
+                    <div class="card important">
+                        <div class="card-body">
+                            <ul class="important-li02">
+                                <li class="li">상품쿠폰과 더블쿠폰, 장바구니 쿠폰은 모두 중복하여 사용이 가능합니다.</li>
+                                <li class="li">포인트는 세일 상품 및 액세서리 등 일부 상품에서는 사용할 수 가 없으며, 10,000 포인트 이상 적립 시 부터 1,000원 단위로 사용 가능합니다.<br>(사용 가능 최소 금액: 11,000원)</li>
+                                <li class="li">쿠폰/포인트 등의 할인혜택에 따라 배송비가 추가 될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //쿠폰/포인트 사용안내 -->
+                    <!-- 결제하기 -->
+                    <div class="card payment">
+                        <div class="card-head">
+                            <p class="tit">결제 수단</p>
+                        </div>
+                        <div class="card-body">
+                            <!-- 결제수단 선택 박스 -->
+                            <div class="radio-box">
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio01" class="radio-pay ico01" name="radio-payment" value="신용카드" checked><label for="radio01">신용카드</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio02" class="radio-pay ico02" name="radio-payment" value="휴대폰"><label for="radio02">휴대폰</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio03" class="radio-pay ico03" name="radio-payment" value="무통장입금"><label for="radio03">무통장입금</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio04" class="radio-pay ico04" name="radio-payment" value="카카오페이"><label for="radio04">카카오페이</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio05" class="radio-pay ico05" name="radio-payment" value="네이버페이"><label for="radio05">네이버페이</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio06" class="radio-pay ico06" name="radio-payment" value="페이코"><label for="radio06">페이코</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //결제수단 선택 박스 -->
+                            <!-- 에스크로 서비스 박스 -->
+                            <div class="escrow-wrap">
+                                <p class="tit">[에스크로 서비스]</p>
+                                <ul class="important-li">
+                                    <li class="li">고객님은 안전거래를 위해 현금 등으로 5만원이 결제 시<br>저희 쇼핑몰에서 가입한 구매안전서비스 "에스크로서비스"를 이용<br>하실 수 있습니다.</li>
+                                    <li class="li">보험대상 : 미배송, 반품/환불거부, 쇼핑몰부도</li>
+                                    <li class="li">전자상거래 소비자보호법의 시행령의 고시요건을 갖추고, 공정거래<br>위원회가 인정한 에스크로 사업자입니다.</li>
+                                </ul>
+                                <div class="cb-area">
+                                    <div class="left">에스크로 서비스 발급</div>
+                                    <div class="right">
+                                        <input type="checkbox" id="cb-escrow01" class="cb-square" name="cb-escrow"><label for="cb-escrow01">발급</label>
+                                        <input type="checkbox" id="cb-escrow02" class="cb-square" name="cb-escrow" checked><label for="cb-escrow02">미발급</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //에스크로 서비스 박스 -->
+                            <!-- 주문동의 박스 -->
+                            <div class="agree-box">
+                                <p class="txt01">주문할 상품의 상품명, 가격, 배송정보 등<br>판매 조건을 확인하였으며,<br>구매 진행에 동의하시겠습니까?</p>
+                                <p class="txt02">(전자상거래법 제 8조 제 2항)</p>
+                                <div class="cb-box">
+                                    <input type="checkbox" id="cb-agree" class="cb-square"><label for="cb-agree">동의합니다.</label>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="#none" class="btn black" title="결제하기" onclick="openCommDialog('alertLayer', '', '')"><span>결제하기</span></a>
+                                </div>
+                            </div>
+                            <!-- //주문동의 박스 -->
+                        </div>
+                    </div>
+                    <!-- //결제하기 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 주문/결제 -->
+
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="alertLayer" class="layer-d dialog">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">알림</p>
+                    <span class="btn-close" onclick="closeCommDialog('alertLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <p class="msg">다이얼로그 내용 출력</p>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 2개일 때 -->
+                <!-- <div class="dialog-foot">
+                    <button type="reset" class="btn-reset">취소</button>
+                    <span class="line-v"></span>
+                    <button type="button" class="btn-ok">확인</button>
+                </div> -->
+                <!-- //버튼 2개일 때 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('alertLayer');scrollMove('.card.payment');">확인</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+
+        <!-- 공통 다이얼로그 영역 : 상품쿠폰-->
+        <div id="couponLayer01" class="layer-d dialog coupon">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">상품 쿠폰 선택</p>
+                    <span class="btn-close" onclick="closeCommDialog('couponLayer01')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="coupon-box">
+                        <ul class="coupon-li">
+                            <li class="li">적용하실 쿠폰을 선택하시면, 할인금액이 자동으로<br>입력됩니다.</li>
+                            <li class="li">보유하신 전체 쿠폰 조회는 "마이페이지 > 쿠폰조회"<br>에서 가능합니다.</li>
+                            <li class="li">쿠폰은 중복해서 사용하실 수 없습니다.</li>
+                            <li class="li">주문 취소 시 사용된 쿠폰은 결제 여부 및 배송 여부와<br>관계없이 소멸되며, 복구 복원되지 않습니다.</li>
+                            <li class="li">할인 금액 쿠폰의 금액이 실제 주문 금액보다 클 경우<br>에는 사용이 불가능합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="coupon-so-box">
+                        <p class="tit">
+                            <span class="txt01">상품명</span>
+                            <span class="txt02">누디핏 심리스 퓨징 브라 블랙/80</span>
+                        </p>
+                        <div class="so-box">
+                            <!-- 210216 퍼블수정 -->
+                            <select>
+                                <option value="">일반 쿠폰을 선택해주세요.</option>
+                                <option value="">쿠폰1</option>
+                                <option value="">쿠폰2</option>
+                            </select>
+                            <p class="txt">쿠폰 할인 금액<span>0</span>원</p>
+                            <select>
+                                <option value="">더블 쿠폰을 선택해주세요.</option>
+                                <option value="">쿠폰1</option>
+                                <option value="">쿠폰2</option>
+                            </select>
+                            <p class="txt">쿠폰 할인 금액<span>0</span>원</p>
+                            <!-- //210216 퍼블수정 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('couponLayer01')">쿠폰 적용</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 상품쿠폰 -->
+
+        <!-- 공통 다이얼로그 영역 : 장바구니쿠폰-->
+        <div id="couponLayer02" class="layer-d dialog coupon">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">장바구니 쿠폰 선택</p>
+                    <span class="btn-close" onclick="closeCommDialog('couponLayer02')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="coupon-box">
+                        <ul class="coupon-li">
+                            <li class="li">적용하실 쿠폰을 선택하시면, 할인금액이 자동으로<br>입력됩니다.</li>
+                            <li class="li">보유하신 전체 쿠폰 조회는 "마이페이지 > 쿠폰조회"<br>에서 가능합니다.</li>
+                            <li class="li">쿠폰은 중복해서 사용하실 수 없습니다.</li>
+                            <li class="li">주문 취소 시 사용된 쿠폰은 결제 여부 및 배송 여부와<br>관계없이 소멸되며, 복구 복원되지 않습니다.</li>
+                            <li class="li">할인 금액 쿠폰의 금액이 실제 주문 금액보다 클 경우<br>에는 사용이 불가능합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="coupon-so-box">
+                        <div class="so-box">
+                            <select>
+                                <option value="">쿠폰을 선택해주세요.</option>
+                                <option value="">쿠폰1</option>
+                                <option value="">쿠폰2</option>
+                            </select>
+                            <!-- 210216 퍼블수정 -->
+                            <p class="txt">쿠폰 할인 금액<span>0</span>원</p>
+                            <!-- //210216 퍼블수정 -->
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('couponLayer02')">쿠폰 적용</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 장바구니쿠폰 -->
+
+        <!-- 공통 다이얼로그 영역 : 쿠폰사용가이드 -->
+        <div id="couponguideLayer" class="layer-d dialog couponguide">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">쿠폰 조회/적용 방법</p>
+                    <span class="btn-close" onclick="closeCommDialog('couponguideLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="couponguide-box">
+                        <div class="box">
+                            <p class="tit">상품쿠폰 할인</p>
+                            <ul class="coupon-li">
+                                <li class="li"><span class="num">1.</span>개별 상품별 쿠폰을 적용하는 화면입니다.</li>
+                                <li class="li type-lh"><span class="num">2.</span>'상품쿠폰 할인' 항목 옆<span class="btn-img">쿠폰조회/적용</span>버튼을 클릭<br>합니다.</li>
+                                <li class="li"><span class="num">3.</span>팝업에서 각 상품에 대한 쿠폰을 선택하시면 됩니다.<br>일반쿠폰과 더블쿠폰은 중복 사용이 가능합니다.</li>
+                            </ul>
+                            <div class="img-box">
+                                <img src="assets/images/img_coupon_guide01.png" alt="상품쿠폰 할인">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="tit">장바구니쿠폰 할인</p>
+                            <ul class="coupon-li">
+                                <li class="li"><span class="num">1.</span>주문상품 전체에 쿠폰을 적용하는 화면입니다.</li>
+                                <li class="li type-lh"><span class="num">2.</span>'장바구니쿠폰 할인' 항목 옆<span class="btn-img">쿠폰조회/적용</span>버튼을 클릭합니다.</li>
+                                <li class="li"><span class="num">3.</span>팝업에서 사용가능한 쿠폰을 선택하여 적용하시면<br>됩니다.</li>
+                            </ul>
+                            <div class="img-box">
+                                <img src="assets/images/img_coupon_guide02.png" alt="장바구니쿠폰 할인">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="tit">[주의사항]</p>
+                            <ul class="important-li">
+                                <li class="li">회원가입, 회원등급, 앱 다운로드, 인스타 팔로우,<br>재구매 쿠폰은 장바구니 쿠폰 할인에서 사용하시면<br>됩니다.</li>
+                                <li class="li">상품 쿠폰과 장바구니 쿠폰은 중복 사용 가능합니다.</li>
+                                <li class="li">장바구니 쿠폰은 주문 1회에 1장씩만 사용 가능<br>합니다.</li>
+                                <li class="li">쿠폰별 사용대상 금액 미만 일 시 팝업창에서 쿠폰이<br>출력 되지 않습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 쿠폰사용가이드 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            //결제수단 선택
+            $("input:radio[name=radio-payment]").on("change", function(){
+                var value = $(this).val();
+
+                if(value == "무통장입금"){
+                    $(".escrow-wrap").addClass("show");
+                }else{
+                    $(".escrow-wrap").removeClass("show");
+                }
+            });
+
+            //에스크로 서비스 발급
+            $("input:checkbox[name=cb-escrow]").on("change", function(){
+                $("input:checkbox[name=cb-escrow]").prop("checked", false);
+                $(this).prop("checked", true);
+            });
+
+            // $("#so01").on("change", function(){
+            //     var selected = $("#so01 option:selected").val();
+            //     $("#so01-value > span").text(selected);
+            // });
+
+            // $("#so02").on("change", function(){
+            //     var selected = $("#so02 option:selected").val();
+            //     $("#so02-value > span").text(selected);
+            // });
+        });
+
+        var scrollValue = 0;
+
+        $(".wrap").on("scroll", function(){
+            scrollValue = Math.round($(".wrap").scrollTop());//스크롤시 현재 스크롤의 값(반올림)
+        });
+        function scrollMove(targetBox){
+            var header = $(".layer-head").css("height"); //헤더 영역 높이
+            var headerHeight = parseInt(header); //헤더 영역 높이
+            var offset = parseInt($(targetBox).offset().top + scrollValue - headerHeight);           
+
+            $('.wrap').animate({
+                scrollTop: offset
+            }, 0);
+        }
+    </script>
+</body>
+</html>

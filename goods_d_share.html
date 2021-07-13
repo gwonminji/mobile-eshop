@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="shareLayer" class="layer-d dialog share show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">공유하기</p>
+                    <span class="btn-close" onclick="closeCommDialog('shareLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="share-box">
+                        <a href="#none" class="ico ico-share-kakao"><span class="txt">카카오톡 공유</span></a>
+                        <a href="#none" class="ico ico-share-url"><span class="txt">URL 복사</span></a>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('shareLayer')">닫기</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+</body>
+</html>

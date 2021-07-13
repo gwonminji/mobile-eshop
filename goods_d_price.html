@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="priceLayer" class="layer-d dialog price show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">쿠폰가</p>
+                    <span class="btn-close" onclick="closeCommDialog('priceLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="price-box">
+                        <div class="tab-wrap">
+                            <ul class="tabs">
+                                <li class="active"><a href="#none">쿠폰가</a></li> <!-- 현재탭 활성화시 active 클래스 추가 -->
+                                <li><a href="#none">멤버십회원가</a></li>
+                            </ul>
+                            <div class="tab-container">
+                                <!-- 쿠폰가 -->
+                                <div class="tab-content active">
+                                    <ul class="price-li">
+                                        <li class="li">[신규가입] 3천원 : 80,000 원</li>
+                                        <li class="li">[신규가입] 5천원 : 78,000원</li>
+                                        <li class="li">[1회 재구매 쿠폰] 1만원 : 73,000원</li>
+                                        <li class="li">[앱 다운로드 쿠폰] 1만원 : 73,000원</li>
+                                        <li class="li">[신규가입] 3천원 : 80,000 원</li>
+                                        <li class="li">[신규가입] 5천원 : 78,000원</li>
+                                        <li class="li">[1회 재구매 쿠폰] 1만원 : 73,000원</li>
+                                        <li class="li">[앱 다운로드 쿠폰] 1만원 : 73,000원</li>
+                                    </ul>
+                                </div>
+                                <!-- //쿠폰가 -->
+                                <!-- 멤버십 회원가 -->
+                                <div class="tab-content">
+                                    <ul class="price-li">
+                                        <li class="li">[브론즈] : 74,700원</li>
+                                        <li class="li">[실버] : 70,550원</li>
+                                        <li class="li">[골드] : 66,400원</li>
+                                        <li class="li">[VIP] : 62,250원</li>
+                                    </ul>
+                                    <ul class="important-li">
+                                        <li class="li"><span class="bul">*</span>등급별 쿠폰은 마이페이지에서 다운로드 받은 후<br>사용하시길 바랍니다. (한달에 5장씩 발급)</li>
+                                    </ul>
+                                </div>
+                                <!-- //멤버십 회원가 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('priceLayer')">닫기</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".tabs li a").on("click", function(){
+                var val = $(this).text();
+                $(".dialog-head .tit").text(val);
+            });
+        });
+    </script>
+</body>
+</html>

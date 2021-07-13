@@ -1,0 +1,2577 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/sly.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <!-- 페이지 전체 -->
+    <div class="wrap">
+        <!-- 헤더 -->
+        <header class="header">
+            <div class="header-top">
+                <button type="button" class="btn-menu"><span></span></button>
+                <h1 class="logo"><a href="#none"><img src="assets/images/logo.png"></a></h1>
+                <div class="right">
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <div class="search-wrap">
+                <div class="search-box">
+                    <input type="search" class="ip-search" value="비너스균일가전 30% 세일!">
+                    <a href="#none" class="btn-search"><span></span></a>
+                </div>
+            </div>
+            <div class="lnb frame">
+                <ul class="slide-lnb">
+                    <li class="li lnb01"><a href="#none" title="금주의 신상품"><h2><span class="txt-pre">금주의</span>신상품</h2></a></li>
+                    <li class="li lnb02"><a href="#none" title="홈"><h2>홈</h2></a></li>
+                    <li class="li lnb03"><a href="#none" title="베스트"><h2>베스트</h2></a></li>
+                    <li class="li lnb04 on"><a href="#none" title="광고상품 20FW"><h2><span class="txt-pre">광고상품</span>20FW</h2></a></li>
+                    <li class="li lnb05"><a href="#none" title="세일중"><h2>세일중</h2></a></li>
+                    <li class="li lnb06"><a href="#none" title="쿠폰&혜택"><h2 class="fix">쿠폰&혜택</h2></a></li>
+                </ul>
+            </div>
+        </header>
+        <!-- //헤더 -->
+
+        <!-- 본문 -->
+        <main class="container">
+            <div class="pr-wrap">
+                <ul class="pr-li">
+                    <!-- <li class="li on"><a href="#Venus">비너스</a></li>
+                    <li class="li"><a href="#Solb">솔브</a></li>
+                    <li class="li"><a href="#Wacoal">와코루</a></li> -->
+                    <li class="li on"><span>비너스</span></li>
+                    <li class="li"><span>솔브</span></li>
+                    <li class="li"><span>와코루</span></li>
+                </ul>
+                <!-- 비너스 영역 -->
+                <div id="Venus" class="pr-box venus">
+                    <!-- 비너스 상단 -->
+                    <div class="inbox">
+                        <div class="img-box">
+                            <img src="assets/images/img_thumb_pr01.png" alt="">
+                        </div>
+                        <div class="bottom-box">
+                            <div class="btn-box">
+                                <a href="#none">VIEW MORE</a>
+                            </div>
+                            <div class="video-box">
+                                <!--
+                                    loop : 반복
+                                    autoplay : 자동재생
+                                    muted : 음소거
+                                    controls : 재생컨트롤바
+                                    playsinline : 아이폰 영상 전체화면 모드 방지
+                                    
+                                    preload="metadata" src="확장자#t=0.5" -> 영상의 첫번째 프레임에 해당하는 이미지가 썸네일로 적용
+                                -->
+                                <video id="Video01" width="100%" preload="metadata" loop muted playsinline autoplay><!-- 210304 퍼블수정 : controls 제거 -->
+                                    <source src="assets/video/sample.mp4#t=0.5" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //비너스 상단 -->
+
+                    <!-- 비너스 광고제품 -->
+                    <div class="box box01">
+                        <div class="tit-box">
+                            <p class="tit">[비너스] 20FW 광고제품</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 비너스 상품 슬라이드 영역 -->
+                        <div class="slide-pr slide-pr01">
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                    <div class="soldout"><span>SOLD OUT</span></div>
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->                               
+                        </div>
+                        <!-- //비너스 상품 슬라이드 영역 -->
+                    </div>
+                    <!-- //비너스 광고제품 -->
+
+                    <!-- 비너스 신상 OPEN -->
+                    <div class="box box02">
+                        <div class="tit-box">
+                            <p class="tit">비너스 겨울 신상 OPEN</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 비너스 비주얼 슬라이드 영역 -->
+                        <div class="swiper-container slide-visual-wrap venus">
+                            <!-- <div class="control">
+                                <span class="paging"><span class="num">1<span>/</span>10</span></span>
+                                <a href="#none" class="btn-more"><span class="ico-more"></span></a>
+                            </div> -->
+                            <div class="swiper-pagination control"></div>
+                            <div class="swiper-wrapper slide-visual">
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                        <div class="balloon-box" style="left:0;top:0;">
+                                            <a href="#none" class="inbox">
+                                                <p class="tit">리버라이크 레이스 풀컵 패드 브라(VBRB413)</p>
+                                                <p class="price">￦78,000</p>
+                                                <span class="ico-more"><span></span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->              
+                                        </div>
+                                        <!-- <div class="swiper-scrollbar"></div> -->
+                                    </div>
+                                    <!-- //비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                        <!-- <div class="swiper-scrollbar"></div> -->
+                                    </div>
+                                    <!-- //비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                        <!-- <div class="swiper-scrollbar"></div> -->
+                                    </div>
+                                    <!-- //비너스 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                            </div>
+                        </div>
+                        <!-- //비너스 비주얼 슬라이드 영역 -->
+                        <!-- 비너스 상품 슬라이드 영역 : 위치 변경 -->
+                        
+                        <!-- //비너스 상품 슬라이드 영역 : 위치 변경 -->
+                    </div>
+                    <!-- //비너스 신상 OPEN -->
+                </div>
+                <!-- //비너스 영역 -->
+                <!-- 솔브 영역 -->
+                <div id="Solb" class="pr-box solb">
+                    <!-- 솔브 상단 -->
+                    <div class="inbox">
+                        <div class="img-box">
+                            <img src="assets/images/img_thumb_pr02.png" alt="">
+                        </div>
+                        <div class="bottom-box">
+                            <div class="btn-box">
+                                <a href="#none">VIEW MORE</a>
+                            </div>
+                            <div class="video-box">
+                                <!--
+                                    loop : 반복
+                                    autoplay : 자동재생
+                                    muted : 음소거
+                                    controls : 재생컨트롤바
+                                    playsinline : 아이폰 영상 전체화면 모드 방지
+
+                                    preload="metadata" src="확장자#t=0.5" -> 영상의 첫번째 프레임에 해당하는 이미지가 썸네일로 적용
+                                -->
+                                <video id="Video02" width="100%" preload="metadata" loop muted playsinline><!-- 210304 퍼블수정 : controls 제거 -->
+                                    <source src="assets/video/sample.mp4#t=0.5" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //솔브 상단 -->
+
+                    <!-- 솔브 광고제품 -->
+                    <div class="box box01">
+                        <div class="tit-box">
+                            <p class="tit">[솔브] 20FW 광고제품</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 솔브 상품 슬라이드 영역 -->
+                        <div class="slide-pr slide-pr01">
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                    <div class="soldout"><span>SOLD OUT</span></div>
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->                               
+                        </div>
+                        <!-- //솔브 상품 슬라이드 영역 -->
+                    </div>
+                    <!-- //솔브 광고제품 -->
+
+                    <!-- 솔브 신상 OPEN -->
+                    <div class="box box02">
+                        <div class="tit-box">
+                            <p class="tit">솔브 겨울 신상 OPEN</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 솔브 비주얼 슬라이드 영역 -->
+                        <div class="swiper-container slide-visual-wrap venus">
+                            <!-- <div class="control">
+                                <span class="paging"><span class="num">1<span>/</span>10</span></span>
+                                <a href="#none" class="btn-more"><span class="ico-more"></span></a>
+                            </div> -->
+                            <div class="swiper-pagination control"></div>
+                            <div class="swiper-wrapper slide-visual">
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                        <div class="balloon-box" style="left:50%;top:50%;">
+                                            <a href="#none" class="inbox">
+                                                <p class="tit">리버라이크 레이스 풀컵 패드 브라(VBRB413)</p>
+                                                <p class="price">￦78,000</p>
+                                                <span class="ico-more"><span></span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                            </div>
+                        </div>
+                        <!-- //솔브 비주얼 슬라이드 영역 -->
+                        <!-- 솔브 상품 슬라이드 영역 : 위치 변경 -->
+                        <!-- //솔브 상품 슬라이드 영역 : 위치 변경 -->
+                    </div>
+                    <!-- //솔브 신상 OPEN -->
+                </div>
+                <!-- //솔브 영역 -->
+                <!-- 와코루 영역 -->
+                <div id="Wacoal" class="pr-box wacoal">
+                    <!-- 와코루 상단 -->
+                    <div class="inbox">
+                        <div class="img-box">
+                            <img src="assets/images/img_thumb_pr03.png" alt="">
+                        </div>
+                        <div class="bottom-box">
+                            <div class="btn-box">
+                                <a href="#none">VIEW MORE</a>
+                            </div>
+                            <div class="video-box">
+                                <!--
+                                    loop : 반복
+                                    autoplay : 자동재생
+                                    muted : 음소거
+                                    controls : 재생컨트롤바
+                                    playsinline : 아이폰 영상 전체화면 모드 방지
+
+                                    preload="metadata" src="확장자#t=0.5" -> 영상의 첫번째 프레임에 해당하는 이미지가 썸네일로 적용
+                                -->
+                                <video id="Video03" width="100%" preload="metadata" loop muted playsinline><!-- 210304 퍼블수정 : controls 제거 -->
+                                    <source src="assets/video/sample.mp4#t=0.5" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //와코루 상단 -->
+
+                    <!-- 와코루 광고제품 -->
+                    <div class="box box01">
+                        <div class="tit-box">
+                            <p class="tit">[와코루] 20FW 광고제품</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 와코루 상품 슬라이드 영역 -->
+                        <div class="slide-pr slide-pr01">
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                    <div class="soldout"><span>SOLD OUT</span></div>
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->
+                            <!-- item -->
+                            <a href="#none" class="item">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <span class="txt-season">20FW 겨울광고</span>
+                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                    <div class="color-box no-sizebox">
+                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <span class="price">78,000원</span>
+                                </div>
+                            </a>
+                            <!-- //item -->                               
+                        </div>
+                        <!-- //와코루 상품 슬라이드 영역 -->
+                    </div>
+                    <!-- //와코루 광고제품 -->
+
+                    <!-- 와코루 신상 OPEN -->
+                    <div class="box box02">
+                        <div class="tit-box">
+                            <p class="tit">와코루 겨울 신상 OPEN</p>
+                            <a href="#none" class="more-txt">전체보기<span></span></a>
+                        </div>
+                        <!-- 와코루 비주얼 슬라이드 영역 -->
+                        <div class="swiper-container slide-visual-wrap venus">
+                            <!-- <div class="control">
+                                <span class="paging"><span class="num">1<span>/</span>10</span></span>
+                                <a href="#none" class="btn-more"><span class="ico-more"></span></a>
+                            </div> -->
+                            <div class="swiper-pagination control"></div>
+                            <div class="swiper-wrapper slide-visual">
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                        <div class="balloon-box" style="left:25%;top:25%;">
+                                            <a href="#none" class="inbox">
+                                                <p class="tit">리버라이크 레이스 풀컵 패드 브라(VBRB413)</p>
+                                                <p class="price">￦78,000</p>
+                                                <span class="ico-more"><span></span></span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                                <!-- item -->
+                                <div class="swiper-slide item">
+                                    <div class="img-box">
+                                        <img src="assets/images/visual_thumb.png" alt="">
+                                    </div>
+                                    <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                    <div class="swiper-container slide-pr02-wrap">
+                                        <div class="swiper-wrapper slide-pr slide-pr02">
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->
+                                            <!-- item -->
+                                            <a href="#none" class="swiper-slide item">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_slide_pr.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <span class="txt-season">20FW 겨울광고</span>
+                                                    <p class="tit">[겨울광고]하이 메모리 브라 ver1(VBR0925)</p>
+                                                    <div class="color-box no-sizebox">
+                                                        <span class="color" style="background:#000;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#6f6f6f;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#cecece;"></span><!-- 컬러칩 색상값 입력 -->
+                                                        <span class="color" style="background:#f0dfbf;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    </div>
+                                                    <span class="price">78,000원</span>
+                                                </div>
+                                            </a>
+                                            <!-- //item -->                               
+                                        </div>
+                                    </div>
+                                    <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                                </div>
+                                <!-- //item -->
+                            </div>
+                        </div>
+                        <!-- //와코루 비주얼 슬라이드 영역 -->
+                        <!-- 와코루 상품 슬라이드 영역 : 위치 변경 -->
+                        <!-- //와코루 상품 슬라이드 영역 : 위치 변경 -->
+                    </div>
+                    <!-- //와코루 신상 OPEN -->
+                </div>
+                <!-- //와코루 영역 -->
+            </div>
+        </main>
+        <!-- //본문 -->
+
+        <!-- 풋터 -->
+        <footer class="footer">
+            <div class="footer-top">
+                <div class="inner">
+                    <p class="tit">고객센터</p>
+                    <p class="num">070-4820-4793</p>
+                    <p class="info">
+                        <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                        <span>토/일요일, 공휴일은 휴무</span>
+                    </p>
+                </div>
+            </div>
+            <div class="footer-btn-box">
+                <a href="#none" title="공지사항">공지사항</a>
+                <a href="#none" title="고객센터">고객센터</a>
+                <a href="#none" title="문의안내">문의안내</a>
+            </div>
+            <div class="footer-company">
+                <div class="inner">
+                    <div class="info-box">
+                        <p class="info">
+                            <span>상호: (주)신영와코루</span>
+                            <span>대표이사: 이의평, 이성원</span>
+                        </p>
+                        <p class="info">
+                            <span>사업자등록번호: 119-81-01559</span>
+                            <span>통신판매번호 제 18-1338</span>
+                        </p>
+                        <p class="info">
+                            <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                            <span>팩스: 02-869-5613</span>
+                        </p>
+                    </div>
+                    <div class="link-box">
+                        <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                        <a href="#none" title="이용약관">이용약관</a>
+                        <a href="#none" title="회사소개">회사소개</a>
+                    </div>
+                    <div class="img-box-wrap">
+                        <div class="img-box">
+                            <img src="assets/images/img_foot01.png" class="img01" alt="">
+                        </div>
+                        <div class="img-box">
+                            <img src="assets/images/img_foot02.png" class="img02" alt="">
+                        </div>
+                        <div class="img-box">
+                            <img src="assets/images/img_foot03.png" class="img03" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-select-box">
+                <div class="inner">
+                    <div class="left">
+                        <!-- <ul class="select-li">
+                            <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                        </ul> -->
+                        <select class="select-li site" name="" id="">
+                            <option>FAMILY SITE</option>
+                            <option>Shinyoungwacoal</option>
+                            <option>VENUS</option>
+                            <option>Wacoal</option>
+                            <option>ORLFA</option>
+                            <option>Solb</option>
+                            <option>Motherpia</option>
+                            <option>Remamma</option>
+                            <option>Shinyoung Stocking</option>
+                        </select>
+                    </div>
+                    <div class="right">
+                        <!-- <ul class="select-li">
+                            <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                        </ul> -->
+                        <select class="select-li blog" name="" id="">
+                            <option>BLOG</option>
+                            <option>Shinyoungwacoal Blog</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- //풋터 -->
+
+        <!-- <button type="button" class="history-back" onclick="history.go(-1);">back</button> -->
+
+        <!-- 메뉴바 -->
+        <div class="menubar">
+            <ul class="menu-li">
+                <li class="menu menu01"><a href="#none">카테고리</a></li>
+                <li class="menu menu02"><a href="#none">주문배송</a></li>
+                <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+            </ul>
+        </div>
+        <!-- //메뉴바 -->
+        <!-- top 버튼 -->
+        <button type="button" class="btn-top"><span>TOP</span></button>
+        <!-- //top 버튼 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui.js"></script>
+    <script>
+        var scrollValue = 0;
+        $(document).ready(function(){          
+            //브랜드 네임 클릭시 해당영역으로 스크롤 이동 
+            $(".pr-li .li").on("click", function(){
+                var headerTop = $(".header-top").css("height"); //헤더 로고 영역 높이
+                var searchWrap = $(".search-wrap").css("height"); //헤더 검색 영역 높이
+                var headerHeight = parseInt(headerTop) + parseInt(searchWrap); //헤더 로고 영역 높이 + 헤더 검색 영역 높이
+
+                //각 브랜드 영역 박스의 offset top 값에서 헤더 로고영역, 서치영역의 높이값을 빼줘야 함
+                // var venusBox = parseInt($("#Venus").offset().top - headerHeight);
+                // var solbBox = parseInt($("#Solb").offset().top - headerHeight);
+                // var wacoalBox = parseInt($("#Wacoal").offset().top - headerHeight);
+                //각 브랜드 영역 박스의 offset top 값에서 현재스크롤 값을 더한 후 헤더 로고영역, 서치영역의 높이값을 빼줘야 함
+                var venusBox = parseInt($("#Venus").offset().top + scrollValue - headerHeight);
+                var solbBox = parseInt($("#Solb").offset().top + scrollValue - headerHeight);
+                var wacoalBox = parseInt($("#Wacoal").offset().top + scrollValue - headerHeight);
+
+                var idx = $(this).index();
+
+                if(idx == 0){//비너스
+                    $('.wrap').animate({
+                        scrollTop: venusBox
+                    }, "linear");
+                    // console.log("비너스클릭",venusBox);
+                }else if(idx == 1){//솔브
+                    $('.wrap').animate({
+                        scrollTop: solbBox
+                    }, "linear");
+                    // console.log("솔브클릭",solbBox);
+                }else{//와코루
+                    $('.wrap').animate({
+                        scrollTop: wacoalBox
+                    }, "linear");
+                    // console.log("와코루클릭",wacoalBox);
+                }
+            });
+
+            var position = Math.round($(".wrap").scrollTop()); //기준 스크롤 값(반올림)
+
+            $(".wrap").on("scroll", function(){
+                scrollValue = Math.round($(".wrap").scrollTop());//스크롤시 현재 스크롤의 값(반올림)
+
+                // console.log("기준스크롤", position, "현재스크롤", scrollValue);
+
+                var headerTop = $(".header-top").css("height"); //헤더 로고 영역 높이
+                var searchWrap = $(".search-wrap").css("height"); //헤더 검색 영역 높이
+                var headerTopHeight = parseInt(headerTop); //헤더 로고 영역 높이
+                var headerHeight = parseInt(headerTop) + parseInt(searchWrap); //헤더 로고 영역 높이 + 헤더 검색 영역 높이
+
+                //각 브랜드 영역 박스의 offset top 값에서 헤더 로고영역, 서치영역의 높이값을 빼줘야 함
+                // var venusBox = parseInt($("#Venus").offset().top - headerHeight);
+                // var solbBox = parseInt($("#Solb").offset().top - headerHeight);
+                // var wacoalBox = parseInt($("#Wacoal").offset().top - headerHeight);
+                //각 브랜드 영역 박스의 offset top 값에서 현재스크롤 값을 더한 후 헤더 로고영역, 서치영역의 높이값을 빼줘야 함
+                var venusBox = parseInt($("#Venus").offset().top + scrollValue - headerHeight);
+                var solbBox = parseInt($("#Solb").offset().top + scrollValue - headerHeight);
+                var wacoalBox = parseInt($("#Wacoal").offset().top + scrollValue - headerHeight);
+
+                if(scrollValue > position){//scroll down
+                    if(scrollValue > headerTopHeight){
+                        $(".pr-wrap").addClass("fixed");
+                    }
+                }else{//scroll up
+                    if(scrollValue < 30){
+                        $(".pr-wrap").removeClass("fixed");
+                    }
+                }
+
+                // console.log("현재 스크롤 : " + scrollValue + ", 비너스 박스 offsetTop : " + venusBox + ", 솔브 박스 offsetTop : " + solbBox + ", 와코루 박스 offsetTop : " + wacoalBox);
+
+
+                var video01 = $("#Video01").get(0);
+                var video02 = $("#Video02").get(0);
+                var video03 = $("#Video03").get(0);
+
+                // console.log("1번 " + video01 + " , 2번 " +  video02 + " , 3번 " + video03);
+                if(scrollValue >= venusBox && scrollValue < solbBox){
+                    $(".pr-li .li").removeClass("on");
+                    $(".pr-li .li:nth-child(1)").addClass("on");
+
+                    video01.play();
+                    video02.pause();
+                    video03.pause();
+
+                    if(scrollValue >= venusBox+300){
+                        video01.pause();
+                    }
+                    // console.log("이동스크롤 : 비너스",scrollValue);
+                }else if(scrollValue >= solbBox && scrollValue < wacoalBox){
+                    $(".pr-li .li").removeClass("on");
+                    $(".pr-li .li:nth-child(2)").addClass("on");
+
+                    video01.pause();
+                    video02.play();
+                    video03.pause();
+
+                    if(scrollValue >= solbBox+300){
+                        video02.pause();
+                    }
+                    // console.log("이동스크롤 : 솔브",scrollValue);
+
+                }else if(scrollValue >= wacoalBox){
+                    $(".pr-li .li").removeClass("on");
+                    $(".pr-li .li:nth-child(3)").addClass("on");
+
+                    video01.pause();
+                    video02.pause();
+                    video03.play();
+
+                    if(scrollValue >= wacoalBox+300){
+                        video03.pause();
+                    }
+                    // console.log("이동스크롤 : 와코루",scrollValue);
+
+                }
+
+                position = scrollValue;
+            });
+
+            //비주얼 배너 슬라이드
+            // $(".venus .slide-visual, .solb .slide-visual, .wacoal .slide-visual").slick({
+            //     dots: false,
+            //     prevArrow: false,
+            //     nextArrow: false,
+            //     speed: 300,
+            //     slidesToShow: 1
+            // });
+            
+            //비주얼 배너 슬라이드 페이지카운트
+            // $(".venus .slide-visual").on('afterChange', function(event, slick, currentSlide, nextSlide){
+            //     console.log(currentSlide);
+            //     var active = currentSlide + 1;
+            //     $(".venus .control .paging .num").html(active + "<span>/</span>" + slick.slideCount);
+            // });
+
+            //비주얼 배너 슬라이드 페이지카운트
+            // $(".solb .slide-visual").on('afterChange', function(event, slick, currentSlide, nextSlide){
+            //     console.log(currentSlide);
+            //     var active = currentSlide + 1;
+            //     $(".solb .control .paging .num").html(active + "<span>/</span>" + slick.slideCount);
+            // });
+
+            //비주얼 배너 슬라이드 페이지카운트
+            // $(".wacoal .slide-visual").on('afterChange', function(event, slick, currentSlide, nextSlide){
+            //     console.log(currentSlide);
+            //     var active = currentSlide + 1;
+            //     $(".wacoal .control .paging .num").html(active + "<span>/</span>" + slick.slideCount);
+            // });
+
+            //상품 슬라이드
+            $(".slide-pr01").slick({
+                dots: false,
+                prevArrow: false,
+                nextArrow: false,
+                infinite: false,
+                speed: 300,
+                slidesToShow: 2.35
+            });
+
+            //210304 퍼블수정 start 
+            //비주얼 배너 슬라이드 slick -> swiper로 변경
+            var swiper01 = new Swiper(".slide-visual-wrap", {
+                slidesPerView: 1,
+                loop: true,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'fraction',
+                },
+                on: {
+                    init: function () {
+                        console.log('swiper init 비주얼');
+                    },
+                    slideChange: function () {
+                        console.log('swiper slideChange 비주얼');
+                    },
+                }
+            });
+
+            // //비주얼 안에 있는 상품 슬라이드 slick -> swiper로 변경
+            var swiper02 = new Swiper(".slide-pr02-wrap", {
+                // slidesPerView: 2.363,
+                slidesPerView: 2.25,
+                // scrollbar: {
+                //     el: '.swiper-scrollbar',
+                // },
+                on: {
+                    init: function () {
+                        console.log('swiper init 썸네일');
+                    },
+                    slideChange: function () {
+                        console.log('swiper slideChange 썸네일');
+                    },
+                }
+            });
+
+            var video01 = document.getElementById("Video01");
+
+            $(video01).on({
+                mouseenter: function () {
+                    video01.setAttribute("controls","controls")
+                },
+                mouseleave: function () {
+                    video01.removeAttribute("controls");
+                }
+            });
+
+            var video02 = document.getElementById("Video02");
+
+            $(video02).on({
+                mouseenter: function () {
+                    video02.setAttribute("controls","controls")
+                },
+                mouseleave: function () {
+                    video02.removeAttribute("controls");
+                }
+            });
+
+            var video03 = document.getElementById("Video03");
+
+            $(video03).on({
+                mouseenter: function () {
+                    video03.setAttribute("controls","controls")
+                },
+                mouseleave: function () {
+                    video03.removeAttribute("controls");
+                }
+            });
+            //210304 퍼블수정 end 
+        });
+    </script>
+</body>
+</html>

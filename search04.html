@@ -1,0 +1,606 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 검색 레이어 -->
+        <div class="layer search">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <input type="search" id="ip-auto" class="ip-keyword" value="비너스"><button type="button" class="btn-clear show"><span></span></button>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                </div>
+                <!-- 제거 -->
+                <!-- 검색레이어 : 자동완성 -->
+                <!-- <div class="type-auto">
+                    <ul class="auto-li">
+                        <li class="li"><a href="#none">비너스</a></li>
+                        <li class="li"><a href="#none">비너스 브라</a></li>
+                        <li class="li"><a href="#none">비너스 겨울 브라</a></li>
+                        <li class="li"><a href="#none">슈비너스 브라</a></li>
+                        <li class="li"><a href="#none">슈비너스 파자마</a></li>
+                    </ul>
+                </div> -->
+                <!-- //검색레이어 : 자동완성 -->
+                <!-- //제거 -->
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="search-list-box">
+                    <!-- 검색결과 상단 -->
+                    <div class="search-top">
+                        <div class="left">
+                            <div class="txt-total">총 <span>10</span> 개</div>
+                        </div>
+                        <div class="right">
+                            <div class="orderby-box">
+                                <ul class="orderby dep01">
+                                    <li><a href="#none">신상품순<span></span></a></li>
+                                    <ul class="orderby dep02">
+                                        <li class="on"><a href="#none">신상품순</a></li> <!-- 선택된 상태인 경우 on 클래스 추가 -->
+                                        <li><a href="#none">높은 가격순</a></li>
+                                        <li><a href="#none">낮은 가격순</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn-filter-layer">필터<span></span></button>
+                            <button type="button" class="btn-filter post"><span></span></button>
+                        </div>
+                    </div>
+                    <!-- //검색결과 상단 -->
+
+                    <!-- 검색결과 리스트 grid -->
+                    <div class="search-list type-grid show">
+                        <!-- 1행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라<br>[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <span class="price-sale">43,000원</span>
+                                            <div class="option-box">
+                                                <!-- 개발에 class에 맞춰 수정 -->
+                                                <div class="color-box cp"><!-- cp 클래스 추가 -->
+                                                    <span class="color ic q0"></span><!-- 컬러칩 색상 q0 ~ q27 -->
+                                                    <span class="color ic q1"></span>
+                                                    <span class="color ic q2"></span>
+                                                    <span class="color ic q3"></span>
+                                                    <span class="color q3"></span>
+                                                    <span class="color ic q4"></span>
+                                                    <span class="color ic q5"></span>
+                                                    <span class="color ic q6"></span>
+                                                    <span class="color ic q7"></span>
+                                                    <span class="color ic q8"></span>
+                                                    <span class="color ic q9"></span>
+                                                    <span class="color ic q10"></span>
+                                                    <span class="color ic q11"></span>
+                                                    <span class="color ic q12"></span>
+                                                    <span class="color ic q13"></span>
+                                                    <span class="color ic q14"></span>
+                                                    <span class="color ic q15"></span>
+                                                    <span class="color ic q16"></span>
+                                                    <span class="color ic q17"></span>
+                                                    <span class="color ic q18"></span>
+                                                    <span class="color ic q19"></span>
+                                                    <span class="color ic q20"></span>
+                                                    <span class="color ic q21"></span>
+                                                    <span class="color ic q22"></span>
+                                                    <span class="color ic q23"></span>
+                                                    <span class="color ic q24"></span>
+                                                    <span class="color ic q25"></span>
+                                                    <span class="color ic q26"></span>
+                                                    <span class="color ic q27"></span>
+                                                </div>
+                                                <!-- //퍼블수정 210202 -->   
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라<br>[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //1행 -->
+                        <!-- 2행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라<br>[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <span class="price-sale">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <span class="sale">SALE</span>
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라<br>[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //2행 -->
+                    </div>
+                    <!-- //검색결과 리스트 grid -->
+
+                    <!-- 검색결과 리스트 post -->
+                    <div class="search-list type-post">
+                        <!-- 1행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <span class="price-sale">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //1행 -->
+                        <!-- 2행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <span class="price-sale">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <span class="sale">SALE</span>
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //2행 -->
+                    </div>
+                    <!-- //검색결과 리스트 post -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->        
+        </div>
+        <!-- //레이어 전체 영역 : 검색 레이어 -->
+
+        <!-- 필터 레이어 -->
+        <div class="layer filter">
+            <div class="dimmed"></div>
+            <!-- 필터 전체 영역 -->
+            <div class="layer-box">
+                <!-- 필터 헤더 -->
+                <div class="filter-head">
+                    <div class="tit">필터</div>
+                    <button type="button" class="btn-reset">초기화</button>
+                    <button type="button" class="btn-close"><span></span></button>
+                </div>
+                <!-- //필터 헤더 -->
+                <!-- 필터 본문 -->
+                <div class="filter-body">
+                    <div class="filter-cont">
+                        <ul class="filter-acc dep01">
+                            <li class="item-li">브랜드 <span class="selected-txt txt-b"></span><span class="arr"></span>
+                                <ul class="filter-acc dep02 cb-brand">
+                                    <li><input type="checkbox" id="b-cb01" class="cb-red" name="cb-brand" value="비너스"><label for="b-cb01">비너스</label></li>
+                                    <li><input type="checkbox" id="b-cb02" class="cb-red" name="cb-brand" value="와코루"><label for="b-cb02">와코루</label></li>
+                                    <li><input type="checkbox" id="b-cb03" class="cb-red" name="cb-brand" value="솔브"><label for="b-cb03">솔브</label></li>
+                                    <li><input type="checkbox" id="b-cb04" class="cb-red" name="cb-brand" value="컴핏비너스"><label for="b-cb04">컴핏비너스</label></li>
+                                    <li><input type="checkbox" id="b-cb05" class="cb-red" name="cb-brand" value="마더피아"><label for="b-cb05">마더피아</label></li>
+                                    <li><input type="checkbox" id="b-cb06" class="cb-red" name="cb-brand" value="오르화"><label for="b-cb06">오르화</label></li>
+                                    <li><input type="checkbox" id="b-cb07" class="cb-red" name="cb-brand" value="샬루트"><label for="b-cb07">샬루트</label></li>
+                                    <li><input type="checkbox" id="b-cb08" class="cb-red" name="cb-brand" value="슈비너스"><label for="b-cb08">슈비너스</label></li>
+                                    <li><input type="checkbox" id="b-cb09" class="cb-red" name="cb-brand" value="아르보"><label for="b-cb09">아르보</label></li>
+                                </ul>
+                            </li>
+                            <li class="item-li">할인구분<span class="arr"></span>
+                                <ul class="filter-acc dep02">
+                                    <li><input type="checkbox" id="s-cb01" class="cb-red"><label for="s-cb01">정상품</label></li>
+                                    <li><input type="checkbox" id="s-cb02" class="cb-red"><label for="s-cb02">할인상품</label></li>
+                                </ul>
+                            </li class="item-li">
+                            <li class="item-li">색상 <span class="selected-txt txt-c"></span><span class="arr"></span>
+                                <div class="filter-acc dep02">
+                                    <div class="row color">
+                                        <input type="checkbox" id="c-cb01" class="cb-colorchip" name="cb-colorchip" value="블랙"><label for="c-cb01" style="background:#887b97;"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb02" class="cb-colorchip" name="cb-colorchip" value="화이트"><label for="c-cb02" style="background:#000;"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb03" class="cb-colorchip" name="cb-colorchip" value="스킨"><label for="c-cb03" style="background:#902f2f;"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb04" class="cb-colorchip" name="cb-colorchip" value="그레이"><label for="c-cb04" style="background:#cca800;"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb05" class="cb-colorchip" name="cb-colorchip" value="컬러명1"><label for="c-cb05" style="background:#ffd200;"></label><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <div class="row color">
+                                        <input type="checkbox" id="c-cb06" class="cb-colorchip" name="cb-colorchip" value="컬러명2"><label for="c-cb06"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb07" class="cb-colorchip" name="cb-colorchip" value="컬러명3"><label for="c-cb07"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb08" class="cb-colorchip" name="cb-colorchip" value="컬러명4"><label for="c-cb08"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb09" class="cb-colorchip" name="cb-colorchip" value="컬러명5"><label for="c-cb09"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb10" class="cb-colorchip" name="cb-colorchip" value="컬러명6"><label for="c-cb10"></label><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <div class="row color">
+                                        <input type="checkbox" id="c-cb11" class="cb-colorchip" name="cb-colorchip" value="컬러명7"><label for="c-cb11"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb12" class="cb-colorchip" name="cb-colorchip" value="컬러명8"><label for="c-cb12"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb13" class="cb-colorchip" name="cb-colorchip" value="컬러명9"><label for="c-cb13"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb14" class="cb-colorchip" name="cb-colorchip" value="컬러명10"><label for="c-cb14"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb15" class="cb-colorchip" name="cb-colorchip" value="컬러명11"><label for="c-cb15"></label><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                    <div class="row color">
+                                        <input type="checkbox" id="c-cb16" class="cb-colorchip" name="cb-colorchip" value="컬러명12"><label for="c-cb16"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb17" class="cb-colorchip" name="cb-colorchip" value="컬러명13"><label for="c-cb17"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb18" class="cb-colorchip" name="cb-colorchip" value="컬러명14"><label for="c-cb18"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb19" class="cb-colorchip" name="cb-colorchip" value="컬러명15"><label for="c-cb19"></label><!-- 컬러칩 색상값 입력 -->
+                                        <input type="checkbox" id="c-cb20" class="cb-colorchip" name="cb-colorchip" value="컬러명16"><label for="c-cb20"></label><!-- 컬러칩 색상값 입력 -->
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item-li">가격<span class="arr"></span>
+                                <!-- 퍼블수정 : 210203 -->
+                                <div class="filter-acc dep02">
+                                    <div class="form-box">
+                                        <input type="text" class="ip-text">
+                                        <span class="txt">원</span>
+                                        <span class="txt">~</span>
+                                        <input type="text" class="ip-text">
+                                        <span class="txt">원</span>
+                                    </div>
+                                </div>
+                                <!-- //퍼블수정 : 210203 -->
+                            </li>
+                            <li class="item-li">사이즈<span class="arr"></span>
+                                <div class="filter-acc dep02">
+                                    <div class="opt-box opt02">
+                                        <div class="left">컵사이즈</div>
+                                        <div class="right">
+                                            <div class="radio-area">
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio01" class="radio-square" name="cup-radio" checked=""><label for="cup-radio01">A</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio02" class="radio-square" name="cup-radio"><label for="cup-radio02">B</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio03" class="radio-square" name="cup-radio"><label for="cup-radio03">C</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio04" class="radio-square" name="cup-radio"><label for="cup-radio04">D</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio05" class="radio-square" name="cup-radio"><label for="cup-radio05">E</label>
+                                                </div>
+                                            </div>
+                                            <div class="radio-area type02">
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio06" class="radio-square" name="cup-radio"><label for="cup-radio06">F</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio07" class="radio-square" name="cup-radio"><label for="cup-radio07">G</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="cup-radio08" class="radio-square" name="cup-radio"><label for="cup-radio08">H</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="opt-box opt03">
+                                        <div class="left">사이즈</div>
+                                        <div class="right">
+                                            <div class="radio-area">
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio01" class="radio-square" name="size-radio" checked=""><label for="size-radio01">60</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio02" class="radio-square" name="size-radio"><label for="size-radio02">65</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio03" class="radio-square" name="size-radio"><label for="size-radio03">70</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio04" class="radio-square" name="size-radio"><label for="size-radio04">75</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio05" class="radio-square" name="size-radio"><label for="size-radio05">80</label>
+                                                </div>
+                                            </div>
+                                            <div class="radio-area type02">
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio06" class="radio-square" name="size-radio"><label for="size-radio06">85</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio07" class="radio-square" name="size-radio"><label for="size-radio07">90</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio08" class="radio-square" name="size-radio"><label for="size-radio08">95</label>
+                                                </div>
+                                                <div class="radio-box">
+                                                    <input type="checkbox" id="size-radio09" class="radio-square" name="size-radio"><label for="size-radio09">100</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- //필터 본문 -->
+                <!-- 필터 풋터 -->
+                <div class="filter-foot">
+                    <button type="button">적용</button>
+                </div>
+                <!-- //필터 풋터 -->
+            </div>
+            <!-- //필터 전체 영역 -->
+        </div>
+        <!-- //필터 레이어 -->
+    </div>    
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script type="text/javascript" src="assets/js/ui-search.js"></script>
+</body>
+</html>

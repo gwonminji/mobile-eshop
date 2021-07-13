@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/sly.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 카테고리 아이템 레이어 -->
+        <div class="layer category">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">카테고리</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색" onclick="alert('2');"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니" onclick="alert('3');"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="cate-wrap type-item">
+                    <div class="cate-dep01-wrap">
+                        <!-- 카테고리 depth01 -->
+                        <ul class="cate-dep01-li">
+                            <li class="li on"><a href="#none" title="여성"><span>여성</span></a></li>
+                            <li class="li"><a href="#none" title="남성"><span>남성</span></a></li>
+                            <li class="li"><a href="#none" title="홈웨어"><span>홈웨어</span></a></li>
+                            <li class="li"><a href="#none" title="체형보정"><span>체형보정</span></a></li>
+                            <li class="li"><a href="#none" title="임산부"><span>임산부</span></a></li>                        
+                        </ul>
+                    </div>
+                    <!-- //카테고리 depth01 -->
+                    <!-- 카테고리 depth02 -->
+                    <div class="cate-dep02-wrap">
+                        <ul class="cate-dep02-li">
+                            <li class="li on"><a href="#none" title="전체"><span>전체</span></a></li>
+                            <li class="li"><a href="#none" title="브라"><span>브라</span></a></li>
+                            <li class="li"><a href="#none" title="팬티"><span>팬티</span></a></li>
+                            <li class="li"><a href="#none" title="슬립"><span>슬립</span></a></li>
+                            <li class="li"><a href="#none" title="ACC"><span>ACC</span></a></li>
+                        </ul>
+                    </div>
+                    <!-- //카테고리 depth02 -->
+                </div>
+                <!-- 상세 카테고리 슬라이드 영역 -->
+                <div class="slide-catedetail-wrap">
+                    <!-- 상세 카테고리 슬라이드 -->
+                    <div class="slide-catedetail">
+                        <div class="slide-li">
+                            <div class="row">
+                                <div class="li"><a href="#none">-  전체</a></div>
+                                <div class="li"><a href="#none">-  몰드 브라</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  전용상품</a></div>
+                                <div class="li"><a href="#none">-  홑겹 브라</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  와이어 브라</a></div>
+                                <div class="li"><a href="#none">-  스포츠 브라</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  노와이어 브라</a></div>
+                                <div class="li"><a href="#none"></a></div>
+                            </div>
+                        </div>
+                        <div class="slide-li">
+                            <div class="row">
+                                <div class="li"><a href="#none">-  전체2</a></div>
+                                <div class="li"><a href="#none">-  몰드 브라2</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  전용상품2</a></div>
+                                <div class="li"><a href="#none">-  홑겹 브라2</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  와이어 브라2</a></div>
+                                <div class="li"><a href="#none">-  스포츠 브라2</a></div>
+                            </div>
+                            <div class="row">
+                                <div class="li"><a href="#none">-  노와이어 브라2</a></div>
+                                <div class="li"><a href="#none"></a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //상세 카테고리 슬라이드 -->
+                </div>
+                <!-- //상세 카테고리 슬라이드 영역 -->
+                <!-- 리스트 영역 -->
+                <div class="search-list-box">
+                    <!-- 상단 -->
+                    <div class="search-top">
+                        <div class="left">
+                            <div class="txt-total">총 <span>10</span> 개</div>
+                        </div>
+                        <div class="right">
+                            <div class="orderby-box">
+                                <ul class="orderby dep01">
+                                    <li id="sortname"><a href="#none">신상품순<span></span></a></li>
+                                    <ul class="orderby dep02">
+                                        <li><a href="#none">기본순</a></li> <!-- 선택된 상태인 경우 on 클래스 추가 -->
+                                        <li class="on"><a href="#none">신상품순</a></li>
+                                        <li><a href="#none">높은 가격순</a></li>
+                                        <li><a href="#none">낮은 가격순</a></li>
+                                    </ul>
+                                </ul>
+                            </div>
+                            <button type="button" class="btn-filter post"><span></span></button>
+                        </div>
+                    </div>
+                    <!-- //상단 -->
+
+                    <!-- 리스트 grid -->
+                    <div class="search-list type-grid show">
+                        <!-- 1행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //1행 -->
+                        <!-- 2행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <span class="sale">SALE</span>
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //2행 -->
+                    </div>
+                    <!-- //리스트 grid -->
+
+                    <!-- 리스트 post -->
+                    <div class="search-list type-post">
+                        <!-- 1행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //1행 -->
+                        <!-- 2행 -->
+                        <div class="row">
+                            <ul class="item-list">
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#none">
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_grid.png">
+                                        </div>
+                                        <div class="txt-box">
+                                            <span class="sale">SALE</span>
+                                            <div class="brand">SOLB</div>
+                                            <div class="tit">러브 홀리데이 트리플본 브라[A~E컵](SBRD055)</div>
+                                            <span class="price">43,000원</span>
+                                            <div class="option-box">
+                                                <div class="color-box">
+                                                    <span class="color" style="background:#d02a40;"></span><!-- 컬러칩 색상값 입력 -->
+                                                    <span class="color" style="background:#019c7c;"></span><!-- 컬러칩 색상값 입력 -->
+                                                </div>
+                                                <div class="size-box">
+                                                    <span>SIZE<span class="ico-arr"></span></span>
+                                                    <ul class="size-layer">
+                                                        <li>A,B,C,D,E,F</li>
+                                                        <li>65,70,75,80,85,90</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- //2행 -->
+                    </div>
+                    <!-- //리스트 post -->
+                </div>
+                <!-- //리스트 영역 -->
+            </div>
+            <!-- //레이어 본문 -->
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01 on"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 카테고리 아이템 레이어 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script type="text/javascript" src="assets/js/ui-search.js"></script>
+    <script>
+        $(document).ready(function(){
+            //카테고리 dep01 sly 적용
+            // var on01 = $(".cate-dep01-li").find(".on").index();
+
+            var options01 = {
+                horizontal: 1,
+                itemNav: 'basic',
+                speed: 300,
+                smart: 1,
+                activateOn: 'click',
+                mouseDragging: 1,
+                touchDragging: 1,
+                activateMiddle: 1,
+                activeClass: 'on'
+                // startAt: on
+            }
+
+            setTimeout(function(){
+                var sly01 = new Sly(".cate-dep01-wrap", options01).init();
+            }, 100);
+
+            //카테고리 dep02 sly 적용
+            // var on02 = $(".cate-dep02-li").find(".on").index();
+
+            var options02 = {
+                horizontal: 1,
+                itemNav: 'basic',
+                speed: 300,
+                smart: 1,
+                activateOn: 'click',
+                mouseDragging: 1,
+                touchDragging: 1,
+                activateMiddle: 1,
+                activeClass: 'on'
+                // startAt: on
+            }
+
+            setTimeout(function(){
+                var sly02 = new Sly(".cate-dep02-wrap", options02).init();
+            }, 100);
+
+            //카테고리 상세 슬라이드
+            $(".cate-dep02-li .li").on("click", function(){
+                var idx = $(this).index();
+                if(idx != 0){
+                    $(".slide-catedetail-wrap").addClass("show");
+                    // 슬라이드
+                    $(".slide-catedetail-wrap.show .slide-catedetail").not(".slick-initialized").slick({
+                        dots: true,
+                        prevArrow: false,
+                        nextArrow: false,
+                        infinite: false,
+                        speed: 300,
+                        slidesToShow: 1
+                    });
+                }else{
+                    $(".slide-catedetail-wrap").removeClass("show");
+                }
+            });
+            
+            // $(".cate-dep01-li .li").on("click", function(){
+            //     $(".cate-dep02-li").empty();
+            //     $('.cate-dep02-wrap').sly(false);
+                
+            //     var html = "<li class='li on'><a href='#none' title='전체'><span>전체</span></a></li>"
+            //                 + "<li class='li'><a href='#none' title='전체'><span>출산전</span></a></li>"
+            //                 + "<li class='li'><a href='#none' title='전체'><span>입원준비</span></a></li>"
+            //                 + "<li class='li'><a href='#none' title='전체'><span>출산 전후 겸용</span></a></li>"
+            //                 + "<li class='li'><a href='#none' title='전체'><span>출산후</span></a></li>";
+
+            //     $(".cate-dep02-li").append(html);
+
+            //     var options03 = {
+            //         horizontal: 1,
+            //         itemNav: 'basic',
+            //         speed: 300,
+            //         smart: 1,
+            //         activateOn: 'click',
+            //         mouseDragging: 1,
+            //         touchDragging: 1,
+            //         activateMiddle: 1,
+            //         activeClass: 'on'
+            //         // startAt: on
+            //     }
+            //     setTimeout(function(){
+            //         var sly03 = new Sly(".cate-dep02-wrap", options03).init();
+            //     }, 100);
+            // });
+        });
+    </script>
+</body>
+</html>

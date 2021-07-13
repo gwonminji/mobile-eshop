@@ -1,0 +1,674 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 고객센터 레이어 -->
+        <div class="layer cscenter">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">1:1 문의하기</p>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="cscenter-wrap qwrite">
+                    <div class="section s01">
+                        <div class="tit-box">
+                            <p class="tit">1:1 문의하기</p>
+                        </div>
+                        <div class="ip-box-wrap">
+                            <p class="tit">문의 종류</p>
+                            <div class="form-box so">
+                                <select name="" id="" class="ip-text so">
+                                    <option value="선택">선택</option>
+                                    <option value="배송관련">배송관련</option>
+                                    <option value="취소/교환/반품">취소/교환/반품</option>
+                                    <option value="쿠폰/포인트">쿠폰/포인트</option>
+                                    <option value="상품관련">상품관련</option>
+                                    <option value="기타">기타</option>
+                                </select>
+                            </div>
+                            <p class="tit">문의 제목</p>
+                            <div class="form-box">
+                                <input type="text" class="ip-text" value="">
+                            </div>
+                            <p class="tit">문의 내용</p>
+                            <div class="form-box">
+                                <textarea name="" id="content" class="ta-cont"></textarea>
+                            </div>
+                            <p class="tit type-btn">상담 상품 선택<button type="button" class="btn-black" onclick="openCommDialog('layerCS', '', '');removeCheckData();"><span>상품 검색</span></button></p>
+                            <div class="goods-li-wrap">
+                                <div id="dataAddArea" class="goods-li">
+                                    <!-- 1세트 -->
+                                    <!-- <div class="li">
+                                        <div class="cb-box">
+                                            <input type="checkbox" id="cb01" class="cb-square" name="cb"><label for="cb01"></label>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_item03.png" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                            <p class="txt">
+                                                <span class="txt01">[균일가] 튤레이스 몰드 저중심 브라(SVBRZ960)</span>
+                                                <span class="txt02">16,000원</span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                    <!-- //1세트 -->
+                                    <!-- 1세트 -->
+                                    <!-- <div class="li">
+                                        <div class="cb-box">
+                                            <input type="checkbox" id="cb02" class="cb-square" name="cb"><label for="cb02"></label>
+                                        </div>
+                                        <div class="img-box">
+                                            <img src="assets/images/img_thumb_item03.png" alt="">
+                                        </div>
+                                        <div class="txt-box">
+                                            <p class="txt">
+                                                <span class="txt01">[균일가] 튤레이스 몰드 저중심 브라(SVBRZ960)</span>
+                                                <span class="txt02">16,000원</span>
+                                            </p>
+                                        </div>
+                                    </div> -->
+                                    <!-- //1세트 -->
+                                </div>
+                                <div id="removeCheckItem" class="btn-box">
+                                    <button type="button" class="btn-cb"><span>선택 삭제</span></button>
+                                </div>
+                            </div>
+                            <p class="tit">사진 등록</p>
+                            <div class="form-box">
+                                <div class="btn-box">
+                                    <input type="text" id="ipFileValue" class="ip-text file" readonly="">
+                                    <button type="button" class="btn-file"><span>파일 찾기</span></button>
+                                    <form action="upload" id="uploadForm" method="post" enctype="multipart/form-data">
+                                        <input type="file" name="file" id="file" style="display:none"/>
+                                    </form>
+                                </div>
+                            </div>
+                            <p class="tit">SMS 알림 받기</p>
+                            <div class="form-box num">
+                                <select name="" id="" class="ip-text so">
+                                    <option value="010">010</option>
+                                </select>
+                                <span class="dash"></span>
+                                <input type="text" class="ip-text" value="">
+                                <span class="dash"></span>
+                                <input type="text" class="ip-text" value="">
+                            </div>
+                            <div class="agree-box">
+                                <div class="cb-box">
+                                    <input type="checkbox" id="cb-agree" class="cb-square"><label for="cb-agree">SMS를 통한 상품 및 이벤트 정보 수신 동의</label>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="#none" class="btn black" title="문의하기"><span>문의하기</span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 고객센터 레이어 -->
+
+        <!-- 레이어 전체 영역 : 고객센터 상품 검색 레이어 -->
+        <div id="layerCS" class="layer type-detail cscenter layer-cscenter">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <p class="tit">상품검색</p>
+                <div class="right">
+                    <a href="#none" class="btn-close" title="닫기" onclick="closeCommDialog('layerCS');"><span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="cscenter-wrap goods-search">
+                    <div class="tab-wrap">
+                        <ul class="tabs">
+                            <li class="active"><a href="#none">상품 검색</a></li>
+                            <li><a href="#none">찜한 상품</a></li>
+                            <li><a href="#none">나의 주문상품</a></li>
+                        </ul>
+                        <div class="tab-container">
+                            <!-- 상품 검색 -->
+                            <div class="tab-content active">
+                                <!-- 검색 폼 -->
+                                <div class="top">
+                                    <div class="ip-box-wrap">
+                                        <div class="form-box">
+                                            <div class="btn-box">
+                                                <input type="text" class="ip-text" value="VBR0928">
+                                                <a href="#none" class="btn-search"><span>검색</span></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- //검색 폼-->
+                                <!-- 검색 결과 리스트 -->
+                                <div class="goods-li-wrap">
+                                    <p class="txt-total">총 <span>123</span>건</p>
+                                    <div class="goods-li type-li01">
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb01" class="cb-square" name="s-cb"><label for="s-cb01"></label>
+                                            </div>
+                                            <div class="img-box">
+                                                <img src="assets/images/img_thumb_item03.png" alt="">
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">레이온 스카프나염 여성 이지웨어세트(VEPQ002S)첫번째</span>
+                                                    <span class="txt02">79,000원1</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb02" class="cb-square" name="s-cb"><label for="s-cb02"></label>
+                                            </div>
+                                            <div class="img-box">
+                                                <img src="assets/images/img_thumb_item03.png" alt="">
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">레이온 스카프나염 여성 이지웨어세트(VEPQ002S)두번째</span>
+                                                    <span class="txt02">79,000원2</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                    </div>
+                                    <!-- 하단 버튼 영역 -->
+                                    <div class="agree-box">
+                                        <div class="btn-box">
+                                            <a href="#none" class="btn black" title="선택하기" onclick="appendData();closeCommDialog('layerCS');"><span>선택하기</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- //하단 버튼 영역 -->
+                                </div>
+                                <!-- //검색 결과 리스트 -->
+                            </div>
+                            <!-- //상품 검색 -->
+                            <!-- 찜한 상품 -->
+                            <div class="tab-content">
+                                <!-- 검색 결과 리스트 -->
+                                <div class="goods-li-wrap">
+                                    <p class="txt-total">총 <span>123</span>건</p>
+                                    <div class="goods-li type-li02">
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb2-01" class="cb-square" name="s-cb2"><label for="s-cb2-01"></label>
+                                            </div>
+                                            <div class="img-box">
+                                                <img src="assets/images/img_thumb_item03.png" alt="">
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">레이온 스카프나염 여성 이지웨어세트(VEPQ002S)찜 1</span>
+                                                    <span class="txt02">79,000원</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb2-02" class="cb-square" name="s-cb2"><label for="s-cb2-02"></label>
+                                            </div>
+                                            <div class="img-box">
+                                                <img src="assets/images/img_thumb_item03.png" alt="">
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">레이온 스카프나염 여성 이지웨어세트(VEPQ002S)찜 2</span>
+                                                    <span class="txt02">79,000원</span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                    </div>
+                                    <!-- 하단 버튼 영역 -->
+                                    <div class="agree-box">
+                                        <div class="btn-box">
+                                            <a href="#none" class="btn black" title="선택하기" onclick="appendData();closeCommDialog('layerCS');"><span>선택하기</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- //하단 버튼 영역 -->
+                                </div>
+                                <!-- //검색 결과 리스트 -->
+                            </div>
+                            <!-- //찜한 상품 -->
+                            <!-- 나의 주문상품 -->
+                            <div class="tab-content">
+                                <!-- 검색 결과 리스트 -->
+                                <div class="goods-li-wrap">
+                                    <p class="txt-total">총 <span>2</span>건</p>
+                                    <div class="goods-li type-li03">
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb3-01" class="cb-square" name="s-cb3"><label for="s-cb3-01"></label>
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">대형 2매입 + 울트라 나이트 1매입 1번째</span>
+                                                    <span class="txt02"><span class="bold">결제금액 79,000</span> 원</span>
+                                                </p>
+                                            </div>
+                                            <div class="txt-status-box">
+                                                <span class="txt-status">주문 취소</span>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="cb-box">
+                                                <input type="checkbox" id="s-cb3-02" class="cb-square" name="s-cb3"><label for="s-cb3-02"></label>
+                                            </div>
+                                            <div class="txt-box">
+                                                <p class="txt">
+                                                    <span class="txt01">대형 2매입 + 울트라 나이트 1매입 2번째</span>
+                                                    <span class="txt02"><span class="bold">결제금액 79,000</span> 원</span>
+                                                </p>
+                                            </div>
+                                            <div class="txt-status-box">
+                                                <span class="txt-status">주문 완료</span>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                    </div>
+                                    <!-- 하단 버튼 영역 -->
+                                    <div class="agree-box">
+                                        <div class="btn-box">
+                                            <a href="#none" class="btn black" title="선택하기" onclick="appendData();closeCommDialog('layerCS');"><span>선택하기</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- //하단 버튼 영역 -->
+                                </div>
+                                <!-- //검색 결과 리스트 -->
+                            </div>
+                            <!-- //나의 주문상품 -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+        </div>
+        <!-- //레이어 전체 영역 : 고객센터 상품 검색 레이어 -->
+    </div>    
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#removeCheckItem").hide();
+            //상품 리스트 선택
+            $("body").on("click", ".goods-li .li", function(){
+                if($(this).parent().hasClass("type-li01")){//상품 리스트 선택 : 상품 검색 탭
+                    var target = $(this).children(".cb-box").children("input[name='s-cb']");
+
+                    if(target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", false);
+                    }else if(!target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", true);
+                    }
+                }else if($(this).parent().hasClass("type-li02")){//상품 리스트 선택 : 찜한 상품 탭
+                    var target = $(this).children(".cb-box").children("input[name='s-cb2']");
+
+                    if(target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", false);
+                    }else if(!target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", true);
+                    }
+                }else if($(this).parent().hasClass("type-li03")){//상품 리스트 선택 : 나의 주문상품 탭
+                    var target = $(this).children(".cb-box").children("input[name='s-cb3']");
+
+                    if(target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", false);
+                    }else if(!target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", true);
+                    }
+                }else{//상품 리스트 선택 : 1:1 문의하기 상담 상품
+                    var target = $(this).children(".cb-box").children("input[name='cb']");
+
+                    if(target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", false);
+                    }else if(!target.is(":checked")){
+                        $(this).children(".cb-box").children("input").prop("checked", true);
+                    }
+                }
+            });
+
+            //선택 상품 삭제
+            $(".btn-cb").on("click", function(){
+                $("input[name=cb]:checked").parent().closest(".li").remove();
+                var itemCnt = $("#dataAddArea").children().length;
+
+                if(itemCnt == 0){
+                    $("#removeCheckItem").hide();
+                }
+            });
+
+            //사진 등록
+            $(".btn-file").on("click", function(){
+                $("#file").trigger("click");
+            });
+
+            //파일 정보 가져오기
+            $("#file").on("change", function(){
+                var files = event.target.files;
+                var filename = files[0].name;
+                $("#ipFileValue").val(filename);
+            });
+
+            //리스트 보기 펼침/닫힘
+            $(".preview-box").on("click", function(){
+                $(this).siblings().toggleClass("show");
+                $(this).children().children(".arr").toggleClass("up");
+            });
+
+            /* 상품 검색 */
+            //상품 리스트 선택 : 상품 검색
+            // $(".goods-li.type-li01 .li").on("click", function(){
+            //     var target = $(this).children(".cb-box").children("input[name='s-cb']");
+
+            //     if(target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", false);
+            //     }else if(!target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", true);
+            //     }
+            // });
+
+            //상품 리스트 선택 : 찜한 상품
+            // $(".goods-li.type-li02 .li").on("click", function(){
+            //     var target = $(this).children(".cb-box").children("input[name='s-cb2']");
+
+            //     if(target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", false);
+            //     }else if(!target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", true);
+            //     }
+            // });
+
+            //상품 리스트 선택 : 나의 주문상품
+            // $(".goods-li.type-li03 .li").on("click", function(){
+            //     var target = $(this).children(".cb-box").children("input[name='s-cb3']");
+
+            //     if(target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", false);
+            //     }else if(!target.is(":checked")){
+            //         $(this).children(".cb-box").children("input").prop("checked", true);
+            //     }
+            // });
+
+            //탭 이동 시 체크박스 초기화
+            $(".tabs li").on("click", function(){
+                removeCheckData();
+            });
+        });
+        
+        //탭 안의 선택 체크박스 초기화
+        function removeCheckData(){
+           $(".tab-content input[type=checkbox]").prop("checked", false);
+        }
+
+        //선택 상품 리스트 추가
+        function appendData(){
+            var imgData, goodsTitle, gooodsPrice;
+            var arr = new Array();
+
+            var jsonData;
+            $(".tabs > li").each(function(i){
+                if($(this).hasClass("active")){
+
+                    if(i == 0){//상품 검색 탭
+                        // console.log("상품 검색 탭");
+                        $(".goods-li.type-li01 .li").each(function(i){
+                            if($(this).find("input:checkbox[name=s-cb]").is(":checked") == true){
+                                console.log("선택 인덱스", i);
+
+                                imgData = $(this).find(".img-box img").attr("src");
+                                goodsTitle = $(this).find(".txt-box .txt .txt01").text();
+                                gooodsPrice = $(this).find(".txt-box .txt .txt02").text();
+
+                                var obj = new Object();
+
+                                obj.img = imgData;
+                                obj.goods = goodsTitle;
+                                obj.price = gooodsPrice;
+
+                                arr.push(obj);
+                            }
+                            jsonData = JSON.stringify(arr);
+                        });
+                    }else if(i == 1){//찜한 상품 탭
+                        // console.log("찜한 상품 탭");
+                        $(".goods-li.type-li02 .li").each(function(i){
+                            if($(this).find("input:checkbox[name=s-cb2]").is(":checked") == true){
+                                console.log("선택 인덱스", i);
+
+                                imgData = $(this).find(".img-box img").attr("src");
+                                goodsTitle = $(this).find(".txt-box .txt .txt01").text();
+                                gooodsPrice = $(this).find(".txt-box .txt .txt02").text();
+
+                                var obj = new Object();
+
+                                obj.img = imgData;
+                                obj.goods = goodsTitle;
+                                obj.price = gooodsPrice;
+
+                                arr.push(obj);
+                            }
+                            jsonData = JSON.stringify(arr);
+                        });
+
+                    }else if(i == 2){// 나의 주문상품 탭
+                        // console.log("나의 주문상품 탭");
+                        $(".goods-li.type-li03 .li").each(function(i){
+                            if($(this).find("input:checkbox[name=s-cb3]").is(":checked") == true){
+                                console.log("선택 인덱스", i);
+
+                                imgData = "null";
+                                goodsTitle = $(this).find(".txt-box .txt .txt01").text();
+                                gooodsPrice = $(this).find(".txt-box .txt .txt02").text();
+
+                                var obj = new Object();
+
+                                obj.img = imgData;
+                                obj.goods = goodsTitle;
+                                obj.price = gooodsPrice;
+
+                                arr.push(obj);
+                            }
+                            jsonData = JSON.stringify(arr);
+                        });
+
+                    }
+                }
+            });
+
+
+            // console.log("배열길이", arr.length);
+
+            // for(var i=0; i < arr.length; i++){
+            //     console.log("배열값", arr[i]);
+            // }
+
+            // console.log("가져온데이터", jsonData);
+            var jData = JSON.parse(jsonData);
+            $("#dataAddArea").empty();
+            for(var i=0; i<jData.length; i++){
+                var list = jData[i];
+                console.log(list.img);
+                console.log(list.goods);
+                console.log(list.price);
+
+                if(list.img != "null"){
+                    var html = "<div class=li>"
+                            + "<div class=cb-box>"
+                                +"<input type=checkbox id=cb" + i + " class=cb-square name=cb><label for=cb" + i + "></label>"
+                            + "</div>"
+                            + "<div class=img-box>"
+                                + "<img src=" + list.img + " alt=''>"
+                            + "</div>"
+                            + "<div class=txt-box>"
+                                + "<p class=txt><span class=txt01>" + list.goods + "</span><span class=txt02>" + list.price + "</span></p>"
+                            + "</div>"    
+                        + "</div>";
+
+                    $("#dataAddArea").append(html);
+                }else{
+                    var html = "<div class=li>"
+                            + "<div class=cb-box>"
+                                +"<input type=checkbox id=cb" + i + " class=cb-square name=cb><label for=cb" + i + "></label>"
+                            + "</div>"
+                            // + "<div class=img-box>"
+                            //     + "<img src=" + list.img + " alt=''>"
+                            // + "</div>"
+                            + "<div class='txt-box w-auto'>"
+                                + "<p class=txt><span class=txt01>" + list.goods + "</span><span class=txt02>" + list.price + "</span></p>"
+                            + "</div>"    
+                        + "</div>";
+
+                    $("#dataAddArea").append(html);
+                }
+            }
+
+            if(jData.length > 0){
+                $("#removeCheckItem").show();
+            }
+
+            // $("#dataAddArea").children().remove();
+            // $("#dataAddArea").append(html);
+
+            // var liHTML = "<div class='li'>"
+            //                 + "<div class='cb-box'>"
+
+            // $("#dataAddArea").append();
+
+            // for(var key in obj){
+            //     if(obj.hasOwnProperty(key)){
+            //         var data = obj[key];
+            //         console.log("가져온 값", data);
+            //     }
+            // }
+
+        }
+    </script>
+</body>
+</html>

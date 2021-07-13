@@ -1,0 +1,385 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/datepicker.min.css"><!-- datepicker -->
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/datepicker.min.js"></script><!-- datepicker -->
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 주문배송 레이어 -->
+        <div class="layer type-detail orderdeliv">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">최근 주문 내역</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="orderdeliv-wrap card-list-wrap type-wide last">
+                    <!-- 상단 조회 폼 -->
+                    <div class="card fir">
+                        <div class="card-head">
+                            <p class="tit">주문/배송 내역 조회</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="form-wrap">
+                                <div class="form-box so">
+                                    <button type="button" id="btn-term" class="ip-text so" onclick="openCommDialog('lookupLayer01', '', '')"><span>최근 1개월</span></button>
+                                    <button type="button" id="btn-deliv" class="ip-text so" onclick="openCommDialog('lookupLayer02', '', '')"><span>전체보기</span></button>
+                                </div>
+                            </div>
+                            <div class="form-wrap more">
+                                <div class="form-box">
+                                    <input id="sDate" class="ip-text" readonly>
+                                    <span class="dash">~</span>
+                                    <input id="eDate" class="ip-text" readonly>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn"><span>조회</span></button>
+                                    </div>
+                                </div>
+                                <p class="txt">*주문 내역은 2016년 1월 1일 이후 정보만 조회 가능합니다.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //상단 조회 폼 -->
+                    <!-- 상품 리스트 -->
+                    <div class="goods-li-wrap">
+                        <div class="card goods">
+                            <div class="card-head">
+                                <p class="tit">주문번호 UCFF19366128</p>
+                                <p class="date">2021-02-19</p>
+                                <a href="#none" class="btn-detail">상세보기</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="goods-info">
+                                    <div class="img-box">
+                                        <img src="assets/images/img_thumb_review_detail.png" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <p class="txt">[봄광고]랄랄라 메모리브라 ver.1(VBR0928) 외 2종</p>
+                                        <p class="price">78,000원</p>
+                                        <p class="status">배송완료</p>
+                                    </div>
+                                </div>
+                                <div class="btns-box">
+                                    <div class="top-area"><!-- 버튼 2개일 때 : two 클래스 추가, 버튼 1개일 때 : one 클래스 추가 -->
+                                        <a href="#none" class="btn"><span>배송조회</span></a>
+                                        <a href="#none" class="btn"><span>상품평 작성</span></a>
+                                        <a href="#none" class="btn"><span>구매확정</span></a>
+                                    </div>
+                                    <div class="bottom-area">
+                                        <a href="#none" class="btn"><span>전체 재구매</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card goods">
+                            <div class="card-head">
+                                <p class="tit">주문번호 UCFF19366128</p>
+                                <p class="date">2021-02-19</p>
+                                <a href="#none" class="btn-detail">상세보기</a>
+                            </div>
+                            <div class="card-body">
+                                <div class="goods-info">
+                                    <div class="img-box">
+                                        <img src="assets/images/img_thumb_review_detail.png" alt="">
+                                    </div>
+                                    <div class="txt-box">
+                                        <p class="txt">[봄광고]랄랄라 메모리브라 ver.1(VBR0928) 외 2종</p>
+                                        <p class="price">78,000원</p>
+                                        <p class="status">배송완료</p>
+                                    </div>
+                                </div>
+                                <div class="btns-box">
+                                    <div class="top-area"><!-- 버튼 2개일 때 : two 클래스 추가, 버튼 1개일 때 : one 클래스 추가 -->
+                                        <a href="#none" class="btn"><span>배송조회</span></a>
+                                        <a href="#none" class="btn"><span>상품평 작성</span></a>
+                                        <a href="#none" class="btn"><span>구매확정</span></a>
+                                    </div>
+                                    <div class="bottom-area">
+                                        <a href="#none" class="btn"><span>전체 재구매</span></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //상품 리스트 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 주문배송 레이어 -->
+
+        <!-- 공통 다이얼로그 영역 : 조회기간 -->
+        <div id="lookupLayer01" class="layer-d dialog lookup">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">조회 기간</p>
+                    <span class="btn-close" onclick="closeCommDialog('lookupLayer01')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="radio-li-wrap">
+                        <div class="radio-li">
+                            <input type="radio" id="r01-radio01" class="radio-round" name="r01" checked><label for="r01-radio01">최근 1개월</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r01-radio02" class="radio-round" name="r01"><label for="r01-radio02">최근 3개월</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r01-radio03" class="radio-round" name="r01"><label for="r01-radio03">최근 6개월</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r01-radio04" class="radio-round" name="r01"><label for="r01-radio04">직접 입력</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('lookupLayer01')">닫기</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 조회기간-->
+
+        <!-- 공통 다이얼로그 영역 : 주문/배송 조회 -->
+        <div id="lookupLayer02" class="layer-d dialog lookup">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">주문/배송 조회</p>
+                    <span class="btn-close" onclick="closeCommDialog('lookupLayer02')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body h-auto">
+                    <div class="radio-li-wrap">
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio01" class="radio-round" name="r02" checked><label for="r02-radio01">전체보기</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio02" class="radio-round" name="r02"><label for="r02-radio02">결제대기</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio03" class="radio-round" name="r02"><label for="r02-radio03">결제완료</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio04" class="radio-round" name="r02"><label for="r02-radio04">상품 준비중</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio05" class="radio-round" name="r02"><label for="r02-radio05">배송중</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio06" class="radio-round" name="r02"><label for="r02-radio06">배송완료</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio07" class="radio-round" name="r02"><label for="r02-radio07">주문취소</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio08" class="radio-round" name="r02"><label for="r02-radio08">교환</label>
+                        </div>
+                        <div class="radio-li">
+                            <input type="radio" id="r02-radio09" class="radio-round" name="r02"><label for="r02-radio09">반품</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('lookupLayer02')">닫기</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 주문/배송 조회 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#sDate").datepicker({
+            language: 'ko-KR',
+            format: 'yyyy/mm/dd',
+            days: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+            daysShort: ['일', '월', '화', '수', '목', '금', '토'],
+            daysMin: ['일', '월', '화', '수', '목', '금', '토'],
+            months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthsShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            weekStart: 0, //0:일, 1:월
+            startView: 0,
+            yearFirst: true,
+            yearSuffix: '년',
+            autoHide: true, //날짜 선택시 datepicker 닫기
+        });
+
+        $("#eDate").datepicker({
+            language: 'ko-KR',
+            format: 'yyyy/mm/dd',
+            days: ['일요일', '월요일', '화요일', '수요일', '목요일', '금요일', '토요일'],
+            daysShort: ['일', '월', '화', '수', '목', '금', '토'],
+            daysMin: ['일', '월', '화', '수', '목', '금', '토'],
+            months: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            monthsShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            weekStart: 0, //0:일, 1:월
+            startView: 0,
+            yearFirst: true,
+            yearSuffix: '년',
+            autoHide: true, //날짜 선택시 datepicker 닫기
+        });
+
+        //조회 기간
+        $("input[name='r01']").on("change, click", function(){
+            var txt = $(this).siblings().text();
+            var targetId = $(this).attr("id");
+
+            closeCommDialog("lookupLayer01");
+            $("#btn-term > span").text(txt);
+
+            //주문/배송 조회 체크 값 전체보기로 초기화
+            $("#r02-radio01").trigger("click");
+
+            if(targetId == "r01-radio04"){
+                $(".form-wrap.more").addClass("show");
+            }else{
+                $(".form-wrap.more").removeClass("show");
+            }
+        });
+
+        //주문/배송 조회
+        $("input[name='r02']").on("change, click", function(){
+            var txt = $(this).siblings().text();
+            var targetId = $(this).attr("id");
+            
+            closeCommDialog("lookupLayer02");
+            $("#btn-deliv > span").text(txt);
+        });
+    });
+    </script>
+</body>
+</html>

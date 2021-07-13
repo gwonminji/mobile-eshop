@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"><!-- 추가 -->
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/jquery-ui.js"></script><!-- 추가 -->
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 검색 레이어 -->
+        <div class="layer search">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <input type="search" id="ip-auto" class="ip-keyword" placeholder="검색어를 입력해주세요." value=""><button type="button" class="btn-clear"><span></span></button>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                </div>
+                <!-- 제거 -->
+                <!-- 검색레이어 : 자동완성 -->
+                <!-- <div class="type-auto">
+                    <ul class="auto-li">
+                        <li class="li"><a href="#none">비너스</a></li>
+                        <li class="li"><a href="#none">비너스 브라</a></li>
+                        <li class="li"><a href="#none">비너스 겨울 브라</a></li>
+                        <li class="li"><a href="#none">슈비너스 브라</a></li>
+                        <li class="li"><a href="#none">슈비너스 파자마</a></li>
+                    </ul>
+                </div> -->
+                <!-- //검색레이어 : 자동완성 -->
+                <!-- //제거 -->
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="section section01">
+                    <h3 class="section-tit">최근 검색어</h3>
+                    <div class="section-cont">
+                        <p class="section-txt">최근 검색어가 없습니다.</p>
+                    </div>
+                </div>
+                <div class="section section02">
+                    <h3 class="section-tit">인기 검색어<span class="txt-small">2021.01.07 10:00 기준</span></h3>
+                    <div class="section-cont">
+                        <div class="list-box">
+                            <div class="left">
+                                <ul class="list">
+                                    <li><a href="#none" class="rolling r01"><span class="num red">1</span>비너스 브라 비너스 브라</a></li>
+                                    <li><a href="#none" class="rolling r02"><span class="num red">2</span>솔브 브라</a></li>
+                                    <li><a href="#none" class="rolling r03"><span class="num red">3</span>와코루 브라</a></li>
+                                    <li><a href="#none" class="rolling r04"><span class="num">4</span>솔브 시그니처 솔브 시그</a></li>
+                                    <li><a href="#none" class="rolling r05"><span class="num">5</span>오르화</a></li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul class="list">
+                                    <li><a href="#none" class="rolling r06"><span class="num">6</span>비너스 브라</a></li>
+                                    <li><a href="#none" class="rolling r07"><span class="num">7</span>솔브 브라</a></li>
+                                    <li><a href="#none" class="rolling r08"><span class="num">8</span>와코루 브라</a></li>
+                                    <li><a href="#none" class="rolling r09"><span class="num">9</span>솔브 시그니처 솔브 시그</a></li>
+                                    <li><a href="#none" class="rolling r10"><span class="num">10</span>오르화</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="section section03">
+                    <h3 class="section-tit">이숍 추천</h3>
+                    <div class="section-cont">
+                        <div class="tag-box">
+                            <ul class="tag">
+                                <li><a href="#none"># 광고제품광고제품광고</a></li>
+                                <li><a href="#none"># 30% 할인</a></li>
+                                <li><a href="#none"># 시그니처</a></li>
+                                <li><a href="#none"># 회원혜택</a></li>
+                                <li><a href="#none"># 광고제품</a></li>
+                                <li><a href="#none"># 30% 할인</a></li>
+                                <li><a href="#none"># 시그니처</a></li>
+                                <li><a href="#none"># 회원혜택</a></li>
+                                <li><a href="#none"># 광고제품</a></li>
+                                <li><a href="#none"># 30% 할인</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+        </div>
+        <!-- //레이어 전체 영역 : 검색 레이어 -->
+
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="alertLayer" class="layer-d dialog">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <!-- <div class="dialog-head">
+                    <p class="tit">알림</p>
+                    <span class="btn-close" onclick="closeCommDialog()"></span> 
+                </div>  -->
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <p class="txt">검색어를 입력해주세요.</p>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 2개일 때 -->
+                <!-- <div class="dialog-foot">
+                    <button type="reset" class="btn-reset">취소</button>
+                    <span class="line-v"></span>
+                    <button type="button" class="btn-ok">확인</button>
+                </div> -->
+                <!-- //버튼 2개일 때 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('alertLayer')">확인111111</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>   
+    <script type="text/javascript" src="assets/js/ui-search.js"></script>
+    <script>
+        $(document).ready(function(){
+            var data = ["비너스", "비너스1", "비너스2", "슈비너스", "슈비너스2","슈비너스3", "테스트", "솔브", "솔브1", "와코루", "와코루2"]; // 배열 형태로 
+            $("#ip-auto").autocomplete({
+                source: data
+            }).autocomplete( "instance" )._renderItem = function( ul, item ) {
+                var re = new RegExp($.trim(this.term.toLowerCase()));
+                var t = item.label.replace(re, "<em>" + $.trim(this.term.toLowerCase()) +
+                    "</em>");
+                return $("<li></li>")
+                    .data("item.autocomplete", item)
+                    .append("<a>" + t + "</a>")
+                    .appendTo(ul);
+            };
+        });
+    </script>
+</body>
+</html>

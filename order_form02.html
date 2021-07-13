@@ -1,0 +1,730 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 주문/결제 -->
+        <div class="layer type-detail order-form">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">비회원 주문/결제</p>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <!-- 단계 -->
+                <div class="step-wrap">
+                    <p class="tit">주문/결제 단계</p>
+                    <div class="step-box">
+                        <!--
+                            완료 단계인 경우 : checked 클래스 추가
+                            현재 단계인 경우 : active 클래스 추가
+                        -->
+                        <div class="step step01">
+                            <span class="round checked"><span></span></span>
+                            <p class="txt-step">STEP 01</p>
+                            <p class="txt">장바구니</p>
+                        </div>
+                        <div class="step step02">
+                            <span class="round active"><span></span></span>
+                            <p class="txt-step">STEP 02</p>
+                            <p class="txt">주문/결제</p>
+                        </div>
+                        <div class="step step03">
+                            <span class="round"><span></span></span>
+                            <p class="txt-step">STEP 03</p>
+                            <p class="txt">주문완료</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //단계 -->
+                <div class="card-list-wrap type-wide">
+                    <!-- 주문/결제 이용안내 -->
+                    <div class="card">
+                        <div class="card-head">
+                            <p class="tit">주문/결제 이용안내</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="important-li">
+                                <li class="li">주문 상품을 수정하실 때는 장바구니로 이동하셔서 정보를 수정하시면 됩니다.</li>
+                                <li class="li">사용한 쿠폰은 취소 시 반환, 복원되지 않고 소멸되오니, 주의하시길 바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주문/결제 이용안내 -->
+                    <!-- 주문 상품 리스트 -->
+                    <div class="card goods-info">
+                        <div class="card-body">
+                            <div class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <div class="detail">
+                                        <p class="goods">풀 레이스 더블윙 브라[A~E컵](SBRD061)</p>
+                                        <p class="opt-info">
+                                            <span class="txt-info01">옵션 : 블랙/75/C</span>
+                                            <span class="txt-info02">수량 : 1개</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-info02 type-full"><!-- 비회원 : type-full 클래스 추가 -->
+                                <div class="row left">
+                                    <span class="tit">구매예정 금액</span>
+                                    <span class="price">990,000원</span>
+                                </div>
+                                <!-- <div class="row right">
+                                    <span class="tit">적립 예정 포인트</span>
+                                    <span class="price">미대상 상품</span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card goods-info">
+                        <div class="card-body">
+                            <div class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <div class="detail">
+                                        <p class="goods">풀 레이스 더블윙 브라[A~E컵](SBRD061)</p>
+                                        <p class="opt-info">
+                                            <span class="txt-info01">옵션 : 블랙/75/C</span>
+                                            <span class="txt-info02">수량 : 1개</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item-info02 type-full"><!-- 비회원 : type-full 클래스 추가 -->
+                                <div class="row left">
+                                    <span class="tit">구매예정 금액</span>
+                                    <span class="price">990,000원</span>
+                                </div>
+                                <!-- <div class="row right">
+                                    <span class="tit">적립 예정 포인트</span>
+                                    <span class="price">1,000 pt</span>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //주문 상품 리스트-->
+                    <!-- 주문 가격 정보 -->
+                    <div class="card price-info">
+                        <div class="card-body">
+                            <ul class="order-price-li">
+                                <div class="li"><span class="left">총 상품 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                                <div class="li"><span class="left">+ 배송비</span><span class="right"><span class="bold">0</span> 원</span></div>
+                            </ul>
+                            <ul class="order-price-li type02">
+                                <div class="li"><span class="left">총 결제 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //주문 가격 정보 -->      
+                    <!-- 할인/혜택 안내 : 비회원인 경우 노출 x -->
+                    <!-- <div class="card important">
+                        <div class="card-body">
+                            <ul class="important-li02">
+                                <li class="li">할인/혜택 사용에서 쿠폰, 포인트를 사용하시면 금액이 달라집니다.</li>
+                                <li class="li">포인트 적립이 적립예정포인트와 상이할 수 있습니다.</li>
+                                <li class="li">자세한 사항은 1:1 문의로 문의바랍니다.</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- //할인/혜택 안내 -->
+                    <!-- 주문자 정보 -->
+                    <div class="card u-info">
+                        <div class="card-head">
+                            <p class="tit">주문자 정보</p>
+                        </div>
+                        <div class="card-body">
+                            <!-- <ul class="u-list">
+                                <li class="li"><span class="left">주문자</span>홍길동</li>
+                                <li class="li"><span class="left">휴대폰</span>010-0000-0000</li>
+                                <li class="li"><span class="left">이메일</span>000@00.com</li>
+                                <li class="li"><span class="left">주문자 주소</span>서울 금천구 가산디지털1로 128 에스티엑스브이타워 506-2호</li>
+                            </ul> -->
+                            <div class="ip-box-wrap">
+                                <p class="tit">받으시는 분 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text">
+                                </div>
+                                <p class="tit">연락처 <span class="important">*</span></p>
+                                <div class="form-box num">
+                                    <select name="" id="" class="ip-text so">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                    </select>
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                </div>
+                                <p class="tit">이메일</p>
+                                <div class="form-box">
+                                    <input type="email" class="ip-text">
+                                </div>
+                                <p class="tit">주문자 주소 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <div class="btn-box">
+                                        <input type="text" class="ip-text" readonly>
+                                        <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                    </div>
+                                    <input type="text" class="ip-text" readonly>
+                                    <input type="text" class="ip-text" readonly>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //주문자 정보 -->
+                    <!-- 개인정보 수집 및 이용약관 : 비회원일 경우에만 노출 -->
+                    <div class="card terms">
+                        <div class="card-head">
+                            <p class="tit">개인정보 수집 및 이용약관</p>
+                        </div>
+                        <div class="card-body">
+                            <div id="content" class="ta-cont">
+                                <ol class="dep01-li">
+                                    <li class="li">1. 목적
+                                        <ul class="dep02-li">
+                                            <li class="li">회사가 고객의 개인정보를 수집하는 것은 원활한 서비스 제공을 하기 위해서 입니다. 단, 고객이 서비스 혜택 정보 제공을 원치 않는다는 의사를 명확히 밝히는 경우 정보 수집을 하지 않으며, 이 경우 정보 미제공으로 인해 발생되는 불이익에 대해서는 회사가 책임지지 않습니다.</li>
+                                        </ul>
+                                    </li>
+                                    <li class="li">2. 항목
+                                        <div class="tbl-wrap">
+                                            <table>
+                                                <caption>개인정보수집 및 이용약관 항목 테이블</caption>
+                                                <colgroup>
+                                                    <col style="width:20px">
+                                                    <col style="width:20px">
+                                                    <col style="width:auto"> 
+                                                </colgroup>
+                                                <tbody>
+                                                <tr>
+                                                    <th scope="row" rowspan="4">회원 가입 시</th>
+                                                    <th>필수여부</th>
+                                                    <td>필수</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집항목</th>
+                                                    <td>성명, ID, 비밀번호, 생년월일, 성별, 이메일, 주소, 휴대전화</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집목적</th>
+                                                    <td>회원특정 및 고지사항 전달, 본인의사 확인 및 불만처리 등의 의사소통 경로 확보</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>이용 기간</th>
+                                                    <td>회원가입 철회 시 까지</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="4">물품 구매 시</th>
+                                                    <th>필수여부</th>
+                                                    <td>필수</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집항목</th>
+                                                    <td>받는 고객명, 배송주소, 배송연락처, 신용카드, 은행계좌번호 등 결제수단 정보</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집목적</th>
+                                                    <td>구매한 물품의 배송 등 고객과 체결한 계약의 이행, 불만처리 등을 위한 본인확인에 이용</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>이용 기간</th>
+                                                    <td>수집 목적 달성 시 까지</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" rowspan="4">비회원 주문</th>
+                                                    <th>필수여부</th>
+                                                    <td>필수</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집항목</th>
+                                                    <td>성명, 이메일, 휴대폰 번호, 주소, 수령자 성명, 배송지 주소, 배송지 연락처, 신용카드, 은행계좌번호 등 결제정보</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>수집목적</th>
+                                                    <td>구매한 물품의 배송 등 고객과 체결한 계약의 이행, 불만처리 등을 위한 본인확인에 이용</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>이용 기간</th>
+                                                    <td>수집 목적 달성 시 까지</td>
+                                                </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </li>
+                                    <li class="li">3. 이용기간
+                                        <ol class="dep02-li indent">
+                                            <li class="li">1) 회사는 수집된 고객의 개인정보는 회원탈퇴 등 수집 및 이용목적이 달성되거나 동의철회 요청이 있는 경우 지체 없이 파기함을 원칙으로 합니다. 단,『전자상거래 등에서의 소비자보호에 관한 법률』등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다.
+                                                <ol class="dep03-li indent">
+                                                    <li class="li">가.『전자상거래 등에서의 소비자보호에 관한 법률』제6조
+                                                        <ul class="dep04-li">
+                                                            <li class="li">- 계약 또는 청약철회 등에 관한 기록 : 5년</li>
+                                                            <li class="li">- 대금결제 및 재화 등의 공급에 관한 기록 : 5년</li>
+                                                            <li class="li">- 소비자의 불만 또는 분쟁처리에 관한 기록 :３년</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li class="li">나.『통신비밀보호』제15조의2 - 인터넷 로그기록자료, 접속지 추적 자료 : 3개월</li>
+                                                    <li class="li">다. 기타 국세기본법, 소비자기본법, 제조물책임법 등</li>
+                                                </ol>
+                                            </li>
+                                            <li class="li">2) 회사의 개인정보 파기방법은 다음과 같습니다.
+                                                <ol class="dep03-li indent">
+                                                    <li class="li">가. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기</li>
+                                                    <li class="li">나. 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제</li>
+                                                </ol>
+                                            </li>
+                                        </ol>
+                                    </li>
+                                </ol>
+
+                                <!-- <p class="txt-num">1. 목적</p>
+                                <p class="txt">
+                                    회사가 고객의 개인정보를 수집하는 것은 원활한 서비스 제공을 하기 위해서 입니다. 단, 고객이 서비스 혜택 정보 제공을 원치 않는다는 의사를 명확히 밝히는 경우 정보 수집을 하지 않으며,
+                                    이 경우 정보 미제공으로 인해 발생되는 불이익에 대해서는 회사가 책임지지 않습니다.</p>
+                                <p class="txt-num">2. 항목</p>
+                                <div class="tbl-wrap">
+                                    <table>
+                                        <caption>개인정보수집 및 이용약관 항목 테이블</caption>
+                                        <colgroup>
+                                            <col style="width:20px">
+                                            <col style="width:32px">
+                                            <col style="width:auto"> 
+                                        </colgroup>
+                                        <tbody>
+                                        <tr>
+                                            <th scope="row" rowspan="4">회원 가입 시</th>
+                                            <th>필수여부</th>
+                                            <td>필수</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집항목</th>
+                                            <td>성명, ID, 비밀번호, 생년월일, 성별, 이메일, 주소, 휴대전화</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집목적</th>
+                                            <td>회원특정 및 고지사항 전달, 본인의사 확인 및 불만처리 등의 의사소통 경로 확보</td>
+                                        </tr>
+                                        <tr>
+                                            <th>이용 기간</th>
+                                            <td>회원가입 철회 시 까지</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="4">물품 구매 시</th>
+                                            <th>필수여부</th>
+                                            <td>필수</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집항목</th>
+                                            <td>받는 고객명, 배송주소, 배송연락처, 신용카드, 은행계좌번호 등 결제수단 정보</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집목적</th>
+                                            <td>구매한 물품의 배송 등 고객과 체결한 계약의 이행, 불만처리 등을 위한 본인확인에 이용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>이용 기간</th>
+                                            <td>수집 목적 달성 시 까지</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row" rowspan="4">비회원 주문</th>
+                                            <th>필수여부</th>
+                                            <td>필수</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집항목</th>
+                                            <td>성명, 이메일, 휴대폰 번호, 주소, 수령자 성명, 배송지 주소, 배송지 연락처, 신용카드, 은행계좌번호 등 결제정보</td>
+                                        </tr>
+                                        <tr>
+                                            <th>수집목적</th>
+                                            <td>구매한 물품의 배송 등 고객과 체결한 계약의 이행, 불만처리 등을 위한 본인확인에 이용</td>
+                                        </tr>
+                                        <tr>
+                                            <th>이용 기간</th>
+                                            <td>수집 목적 달성 시 까지</td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <p class="txt-num">3. 이용기간</p>
+                                <ol>
+                                    <li>1) 회사는 수집된 고객의 개인정보는 회원탈퇴 등 수집 및 이용목적이 달성되거나 동의철회 요청이 있는 경우 지체 없이 파기함을 원칙으로 합니다. 단,『전자상거래 등에서의 소비자보호에 관한 법률』등 관련법령의 규정에 의하여 다음과 같이 거래 관련 권리 의무 관계의 확인 등을 이유로 일정기간 보유하여야 할 필요가 있을 경우에는 일정기간 보유합니다.
+                                        <ul>
+                                            <li>가.『전자상거래 등에서의 소비자보호에 관한 법률』제6조
+                                                <ul>
+                                                    <li>- 계약 또는 청약철회 등에 관한 기록 : 5년</li>
+                                                    <li>- 대금결제 및 재화 등의 공급에 관한 기록 : 5년</li>
+                                                    <li>- 소비자의 불만 또는 분쟁처리에 관한 기록 :３년</li>
+                                                </ul>
+                                            </li>
+                                            <li>나.『통신비밀보호』제15조의2 - 인터넷 로그기록자료, 접속지 추적 자료 : 3개월</li>
+                                            <li>다. 기타 국세기본법, 소비자기본법, 제조물책임법 등</li>
+                                        </ul>
+                                    </li>
+                                    <li>2) 회사의 개인정보 파기방법은 다음과 같습니다.
+                                        <ul>
+                                            <li>가. 종이에 출력된 개인정보는 분쇄기로 분쇄하거나 소각을 통하여 파기</li>
+                                            <li>나. 전자적 파일형태로 저장된 개인정보는 기록을 재생할 수 없는 기술적 방법을 사용하여 삭제</li>
+                                        </ul>
+                                    </li>
+                                </ol> -->
+                            </div>
+                            <div class="cb-box">
+                                <input type="checkbox" id="cb-terms" class="cb-square"><label for="cb-terms">이용 약관에 동의합니다.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //개인정보 수집 및 이용약관 -->
+                    <!-- 배송 정보 -->
+                    <div class="card addr-info">
+                        <div class="card-head">
+                            <p class="tit">배송 정보</p>
+                            <div class="right-box">
+                                <input type="checkbox" id="cb01" class="cb-square"><label for="cb01">주문자 정보와 동일</label>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="ip-box-wrap">
+                                <p class="tit">받으시는 분 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text">
+                                </div>
+                                <p class="tit">배송지 주소 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <div class="btn-box">
+                                        <input type="text" class="ip-text" readonly>
+                                        <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                    </div>
+                                    <input type="text" class="ip-text" readonly>
+                                    <input type="text" class="ip-text" readonly>
+                                </div>
+                                <p class="tit">연락처 <span class="important">*</span></p>
+                                <div class="form-box num">
+                                    <select name="" id="" class="ip-text so">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                    </select>
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                </div>
+                                <p class="tit">일반 전화</p>
+                                <div class="form-box num">
+                                    <select name="" id="" class="ip-text so">
+                                        <option value="02">02</option>
+                                        <option value="031">031</option>
+                                        <option value="032">032</option>
+                                    </select>
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text">
+                                </div>
+                                <p class="tit">배송 메모</p>
+                                <div class="form-box">
+                                    <textarea name="" id="content" class="ta-cont"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //배송 정보 -->
+                    <!-- 할인/혜택 : 비회원인 경우 노출 x -->
+                    <!-- <div class="card sale">
+                        <div class="card-head">
+                            <p class="tit">할인/혜택</p>
+                            <div class="right-box">
+                                <button type="button" class="ico-question">쿠폰조회/적용 방법<span></span></button>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <p class="tit">총 상품 금액</p>
+                                <div class="form-box full">
+                                    <input type="text" class="ip-text" value="41,000"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box"></div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">상품쿠폰 할인</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="0"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box">
+                                    <button type="button" class="btn black"><span>쿠폰조회/적용</span></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">장바구니쿠폰<br>할인</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="0"><span class="txt">원</span>
+                                </div>
+                                <div class="right-box">
+                                    <button type="button" class="btn red"><span>쿠폰조회/적용</span></button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="tit">포인트 사용</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text" value="1,000"><span class="txt">P</span>
+                                </div>
+                                <div class="right-box">
+                                    <input type="checkbox" id="cb02" class="cb-square"><label for="cb02">모두 사용</label>
+                                </div>
+                            </div>
+                            <p class="txt-point">사용 가능한 포인트: <span>1,000</span> P</p>
+                        </div>
+                    </div> -->
+                    <!-- //할인/혜택 -->
+                    <!-- 총 판매가 -->
+                    <div class="card price-info type02 mt0"><!-- 비회원인 경우 mt0 클래스 추가 -->
+                        <div class="card-head">
+                            <p class="tit">총 판매가</p>
+                        </div>
+                        <div class="card-body">
+                            <ul class="order-price-li">
+                                <div class="li"><span class="left">총 상품 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                                <div class="li"><span class="left">+ 배송비</span><span class="right"><span class="bold">0</span> 원</span></div>
+                            </ul>
+                            <ul class="order-price-li type02">
+                                <div class="li"><span class="left">총 결제 금액</span><span class="right"><span class="bold">41,000</span> 원</span></div>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //총 판매가 -->
+                    <!-- 쿠폰/포인트 사용안내 : 비회원인 경우 노출 x -->
+                    <!-- <div class="card important">
+                        <div class="card-body">
+                            <ul class="important-li02">
+                                <li class="li">상품쿠폰과 더블쿠폰, 장바구니 쿠폰은 모두 중복하여 사용이 가능합니다.</li>
+                                <li class="li">포인트는 세일 상품 및 액세서리 등 일부 상품에서는 사용할 수 가 없으며, 10,000 포인트 이상 적립 시 부터 1,000원 단위로 사용 가능합니다.<br>(사용 가능 최소 금액: 11,000원)</li>
+                                <li class="li">쿠폰/포인트 등의 할인혜택에 따라 배송비가 추가 될 수 있습니다.</li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <!-- //쿠폰/포인트 사용안내 -->
+                    <!-- 결제하기 -->
+                    <div class="card payment">
+                        <div class="card-head">
+                            <p class="tit">결제 수단</p>
+                        </div>
+                        <div class="card-body">
+                            <!-- 결제수단 선택 박스 -->
+                            <div class="radio-box">
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio01" class="radio-pay ico01" name="radio-payment" value="신용카드" checked><label for="radio01">신용카드</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio02" class="radio-pay ico02" name="radio-payment" value="휴대폰"><label for="radio02">휴대폰</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio03" class="radio-pay ico03" name="radio-payment" value="무통장입금"><label for="radio03">무통장입금</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio04" class="radio-pay ico04" name="radio-payment" value="카카오페이"><label for="radio04">카카오페이</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="left">
+                                        <input type="radio" id="radio05" class="radio-pay ico05" name="radio-payment" value="네이버페이"><label for="radio05">네이버페이</label>
+                                    </div>
+                                    <div class="right">
+                                        <input type="radio" id="radio06" class="radio-pay ico06" name="radio-payment" value="페이코"><label for="radio06">페이코</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //결제수단 선택 박스 -->
+                            <!-- 에스크로 서비스 박스 -->
+                            <div class="escrow-wrap">
+                                <p class="tit">[에스크로 서비스]</p>
+                                <ul class="important-li">
+                                    <li class="li">고객님은 안전거래를 위해 현금 등으로 5만원이 결제 시<br>저희 쇼핑몰에서 가입한 구매안전서비스 "에스크로서비스"를 이용<br>하실 수 있습니다.</li>
+                                    <li class="li">보험대상 : 미배송, 반품/환불거부, 쇼핑몰부도</li>
+                                    <li class="li">전자상거래 소비자보호법의 시행령의 고시요건을 갖추고, 공정거래<br>위원회가 인정한 에스크로 사업자입니다.</li>
+                                </ul>
+                                <div class="cb-area">
+                                    <div class="left">에스크로 서비스 발급</div>
+                                    <div class="right">
+                                        <input type="checkbox" id="cb-escrow01" class="cb-square" name="cb-escrow"><label for="cb-escrow01">발급</label>
+                                        <input type="checkbox" id="cb-escrow02" class="cb-square" name="cb-escrow" checked><label for="cb-escrow02">미발급</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //에스크로 서비스 박스 -->
+                            <!-- 주문동의 박스 -->
+                            <div class="agree-box">
+                                <p class="txt01">주문할 상품의 상품명, 가격, 배송정보 등<br>판매 조건을 확인하였으며,<br>구매 진행에 동의하시겠습니까?</p>
+                                <p class="txt02">(전자상거래법 제 8조 제 2항)</p>
+                                <div class="cb-box">
+                                    <input type="checkbox" id="cb-agree" class="cb-square"><label for="cb-agree">동의합니다.</label>
+                                </div>
+                                <div class="btn-box">
+                                    <a href="#none" class="btn black" title="결제하기"><span>결제하기</span></a>
+                                </div>
+                            </div>
+                            <!-- //주문동의 박스 -->
+                        </div>
+                    </div>
+                    <!-- //결제하기 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 주문/결제 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            //결제수단 선택
+            $("input:radio[name=radio-payment]").on("change", function(){
+                var value = $(this).val();
+
+                if(value == "무통장입금"){
+                    $(".escrow-wrap").addClass("show");
+                }else{
+                    $(".escrow-wrap").removeClass("show");
+                }
+            });
+
+            //에스크로 서비스 발급
+            $("input:checkbox[name=cb-escrow]").on("change", function(){
+                $("input:checkbox[name=cb-escrow]").prop("checked", false);
+                $(this).prop("checked", true);
+            });
+
+            // $("#so01").on("change", function(){
+            //     var selected = $("#so01 option:selected").val();
+            //     $("#so01-value > span").text(selected);
+            // });
+
+            // $("#so02").on("change", function(){
+            //     var selected = $("#so02 option:selected").val();
+            //     $("#so02-value > span").text(selected);
+            // });
+
+            // $("#so03").on("change", function(){
+            //     var selected = $("#so03 option:selected").val();
+            //     $("#so03-value > span").text(selected);
+            // });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 마이페이지 레이어 -->
+        <div class="layer mypage">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">나의 반품/교환 내역</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="mypage-wrap apply next">
+                    <!-- 교환 신청 유의사항 -->
+                    <div class="section s01">
+                        <div class="tit-box">
+                            <p class="tit">교환 신청</p>
+                        </div>
+                        <div class="important-box">
+                            <ul class="important-li">
+                                <li class="li"><span class="bul">-</span>교환/반품 신청은 배송 완료 후 14일 내에 가능합니다.</li>
+                                <li class="li"><span class="bul">-</span>교환 택배비는 <span class="bold">박스에 5,000원을
+                                        동봉</span>해주시거나,<br><span class="bold">하나은행</span> <span
+                                        class="bold">133-125468-01404</span> <span class="bold">(주)신영와코루</span>로 입금 부탁
+                                    드립니다.</li>
+                            </ul>
+                        </div>
+                        <!-- 교환신청 목록 -->
+                        <div class="tbl-wrap">
+                            <table class="tbl-vertical">
+                                <caption>교환신청 목록</caption>
+                                <colgroup>
+                                    <col style="width:auto;">
+                                    <col style="width:118px;">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>교환 상품 정보</th>
+                                        <th>교환 사유</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="type-pd tal">
+                                            <span class="txt-gray">UEFN30455681-1</span>
+                                            <span class="txt-black">레이온 스카프나염 여성 이지웨어 세트(VEPQ002S)</span>
+                                            <span class="txt-gray">교환 상품 옵션 : 블랙/FREE</span>
+                                        </td>
+                                        <td class="type-pd">
+                                            <span class="txt-status">사이즈/색상/상품 오선택</span>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- //교환신청 목록 -->
+                    </div>
+                    <!-- //교환 신청 유의사항 -->
+                    <!-- 교환 상품 배송지 -->
+                    <div class="card addr-info">
+                        <div class="card-head">
+                            <p class="tit">교환 상품 배송지</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="ip-box-wrap">
+                                <p class="tit">받으시는 분</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text bg" value="홍길동">
+                                </div>
+                                <p class="tit">연락처 <span class="important">*</span></p>
+                                <div class="form-box num">
+                                    <select name="" id="" class="ip-text so">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                    </select>
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text bg" maxlength="4" value="0000">
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text bg" maxlength="4" value="0000">
+                                </div>
+                                <p class="tit">주문자 주소 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <div class="btn-box">
+                                        <input type="text" class="ip-text" value="12345" readonly="">
+                                        <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                    </div>
+                                    <input type="text" class="ip-text" value="서울특별시 금천구 가산디지털로 128, STX-V타워"
+                                        readonly="">
+                                    <input type="text" class="ip-text" value="상세주소" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //교환 상품 배송지 -->
+                    <!-- 교환 상품 회수지 -->
+                    <div class="card addr-info">
+                        <div class="card-head">
+                            <p class="tit">교환 상품 회수지</p>
+                        </div>
+                        <div class="card-body">
+                            <div class="ip-box-wrap">
+                                <p class="tit">받으시는 분</p>
+                                <div class="form-box">
+                                    <input type="text" class="ip-text bg" value="홍길동">
+                                </div>
+                                <p class="tit">연락처 <span class="important">*</span></p>
+                                <div class="form-box num">
+                                    <select name="" id="" class="ip-text so">
+                                        <option value="010">010</option>
+                                        <option value="011">011</option>
+                                    </select>
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text bg" maxlength="4" value="0000">
+                                    <span class="dash"></span>
+                                    <input type="text" class="ip-text bg" maxlength="4" value="0000">
+                                </div>
+                                <p class="tit">주문자 주소 <span class="important">*</span></p>
+                                <div class="form-box">
+                                    <div class="btn-box">
+                                        <input type="text" class="ip-text" value="12345" readonly="">
+                                        <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                    </div>
+                                    <input type="text" class="ip-text" value="서울특별시 금천구 가산디지털로 128, STX-V타워"
+                                        readonly="">
+                                    <input type="text" class="ip-text" value="상세주소" readonly="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //교환 상품 회수지 -->
+                    <!-- 하단 버튼 영역 -->
+                    <div class="btn-box type-half">
+                        <a href="#none" class="btn gray"><span>취소</span></a>
+                        <a href="#none" class="btn black"><span>교환신청</span></a>
+                    </div>
+                    <!-- //하단 버튼 영역 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04 on"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 마이페이지 레이어 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function () {
+            //전체 선택, 전체해제
+            $("input:checkbox[name=cb-all]").on("change", function () {
+                if ($("input:checkbox[name=cb-all]").is(":checked") == true) {
+                    $("input:checkbox[name=cb-item]").prop("checked", true);
+                } else {
+                    $("input:checkbox[name=cb-item]").prop("checked", false);
+                }
+            });
+
+            //아이템 체크해제 시 전체선택 체크해제
+            $("input:checkbox[name=cb-item]").on("change", function () {
+                $("input:checkbox[name=cb-item]").each(function (index) {
+                    var total = $("input:checkbox[name=cb-item]").length;
+                    var checked = $("input:checkbox[name=cb-item]:checked").length;
+                    if (total > checked) {
+                        $("input:checkbox[name=cb-all]").prop("checked", false);
+                    } else if (total == checked) {
+                        $("input:checkbox[name=cb-all]").prop("checked", true);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

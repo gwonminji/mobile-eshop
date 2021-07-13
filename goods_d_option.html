@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="optionLayer" class="layer-d dialog option show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">옵션 선택</p>
+                    <span class="btn-close" onclick="closeCommDialog('optionLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="opt-box opt01">
+                        <div class="left">색상</div>
+                        <div class="right">
+                            <div class="radio-area">
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio01" class="radio-color" name="color-radio">
+                                    <label for="color-radio01" class="color"><span class="round"><span style="background:green;"></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio02" class="radio-color" name="color-radio" checked="">
+                                    <label for="color-radio02" class="color"><span class="round"><span style="background:#b50e1a;"></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio03" class="radio-color" name="color-radio">
+                                    <label for="color-radio03" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio04" class="radio-color" name="color-radio">
+                                    <label for="color-radio04" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio05" class="radio-color" name="color-radio">
+                                    <label for="color-radio05" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                            </div>
+                            <div class="radio-area">
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio06" class="radio-color" name="color-radio">
+                                    <label for="color-radio06" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio07" class="radio-color" name="color-radio">
+                                    <label for="color-radio07" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio08" class="radio-color" name="color-radio">
+                                    <label for="color-radio08" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio09" class="radio-color" name="color-radio">
+                                    <label for="color-radio09" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="color-radio10" class="radio-color" name="color-radio">
+                                    <label for="color-radio10" class="color"><span class="round"><span></span></span><span class="txt">그레이<br>바이올렛</span></label><!-- 컬러칩 색상값 입력 -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opt-box b0 opt02">
+                        <div class="left">컵사이즈</div>
+                        <div class="right">
+                            <div class="radio-area">
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio01" class="radio-square" name="cup-radio" checked=""><label for="cup-radio01">A</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio02" class="radio-square" name="cup-radio"><label for="cup-radio02">B</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio03" class="radio-square" name="cup-radio"><label for="cup-radio03">C</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio04" class="radio-square" name="cup-radio"><label for="cup-radio04">D</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio05" class="radio-square" name="cup-radio"><label for="cup-radio05">E</label>
+                                </div>
+                            </div>
+                            <!-- <div class="radio-area type02">
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio06" class="radio-square" name="cup-radio"><label for="cup-radio06">F</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio07" class="radio-square" name="cup-radio"><label for="cup-radio07">G</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="cup-radio08" class="radio-square" name="cup-radio"><label for="cup-radio08">H</label>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="opt-box b0 opt03">
+                        <div class="left">사이즈</div>
+                        <div class="right">
+                            <div class="radio-area">
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio01" class="radio-square" name="size-radio" checked=""><label for="size-radio01">60</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio02" class="radio-square" name="size-radio"><label for="size-radio02">65</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio03" class="radio-square" name="size-radio"><label for="size-radio03">70</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio04" class="radio-square" name="size-radio"><label for="size-radio04">75</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio05" class="radio-square" name="size-radio"><label for="size-radio05">80</label>
+                                </div>
+                            </div>
+                            <!-- <div class="radio-area type02">
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio06" class="radio-square" name="size-radio"><label for="size-radio06">85</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio07" class="radio-square" name="size-radio"><label for="size-radio07">90</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio08" class="radio-square" name="size-radio"><label for="size-radio08">95</label>
+                                </div>
+                                <div class="radio-box">
+                                    <input type="radio" id="size-radio09" class="radio-square" name="size-radio"><label for="size-radio09">100</label>
+                                </div>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="opt-box b0 opt04">
+                        <div class="left">수량</div>
+                        <div class="right">
+                            <div class="volume-box">
+                                <button type="button" class="btn-minus"><span></span></button>
+                                <span class="num">1</span>
+                                <button type="button" class="btn-plus"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="opt-box b-type02 opt05">
+                        <div class="left">합계</div>
+                        <div class="right"><span class="price"><span class="bold">42,000</span> 원</span></div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('optionLayer')">확인</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            var target = $(".volume-box .num").text();
+            var num = parseInt(target);
+                
+            //수량 - 버튼
+            $(".volume-box .btn-minus").on("click", function(){                
+                //최소 수량 1
+                if(num < 1){
+                    //수량 1 이하일 때
+                }else{
+                    num -= 1;
+
+                    $(".volume-box .num").text(num);
+                }
+            });
+
+            //수량 + 버튼
+            $(".volume-box .btn-plus").on("click", function(){
+                num += 1;
+
+                $(".volume-box .num").text(num);
+            });
+        });
+    </script>
+</body>
+</html>

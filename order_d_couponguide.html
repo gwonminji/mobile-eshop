@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="couponguideLayer" class="layer-d dialog couponguide show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">쿠폰 조회/적용 방법</p>
+                    <span class="btn-close" onclick="closeCommDialog('couponguideLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="couponguide-box">
+                        <div class="box">
+                            <p class="tit">상품쿠폰 할인</p>
+                            <ul class="coupon-li">
+                                <li class="li"><span class="num">1.</span>개별 상품별 쿠폰을 적용하는 화면입니다.</li>
+                                <li class="li type-lh"><span class="num">2.</span>'상품쿠폰 할인' 항목 옆<span class="btn-img">쿠폰조회/적용</span>버튼을 클릭<br>합니다.</li>
+                                <li class="li"><span class="num">3.</span>팝업에서 각 상품에 대한 쿠폰을 선택하시면 됩니다.<br>일반쿠폰과 더블쿠폰은 중복 사용이 가능합니다.</li>
+                            </ul>
+                            <div class="img-box">
+                                <img src="assets/images/img_coupon_guide01.png" alt="상품쿠폰 할인">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="tit">장바구니쿠폰 할인</p>
+                            <ul class="coupon-li">
+                                <li class="li"><span class="num">1.</span>주문상품 전체에 쿠폰을 적용하는 화면입니다.</li>
+                                <li class="li type-lh"><span class="num">2.</span>'장바구니쿠폰 할인' 항목 옆<span class="btn-img">쿠폰조회/적용</span>버튼을 클릭합니다.</li>
+                                <li class="li"><span class="num">3.</span>팝업에서 사용가능한 쿠폰을 선택하여 적용하시면<br>됩니다.</li>
+                            </ul>
+                            <div class="img-box">
+                                <img src="assets/images/img_coupon_guide02.png" alt="장바구니쿠폰 할인">
+                            </div>
+                        </div>
+                        <div class="box">
+                            <p class="tit">[주의사항]</p>
+                            <ul class="important-li">
+                                <li class="li">회원가입, 회원등급, 앱 다운로드, 인스타 팔로우,<br>재구매 쿠폰은 장바구니 쿠폰 할인에서 사용하시면<br>됩니다.</li>
+                                <li class="li">상품 쿠폰과 장바구니 쿠폰은 중복 사용 가능합니다.</li>
+                                <li class="li">장바구니 쿠폰은 주문 1회에 1장씩만 사용 가능<br>합니다.</li>
+                                <li class="li">쿠폰별 사용대상 금액 미만 일 시 팝업창에서 쿠폰이<br>출력 되지 않습니다.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+</body>
+</html>

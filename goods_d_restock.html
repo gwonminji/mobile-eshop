@@ -1,0 +1,61 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="restockLayer" class="layer-d dialog restock show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">재입고 알림</p>
+                    <span class="btn-close" onclick="closeCommDialog('restockLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="restock-box">
+                        <div class="info-box">
+                            <span class="txt">휴대폰 번호</span><span class="txt-tel">010-****-0000</span>
+                        </div>
+                        <p class="info-txt">신청일로부터 30일 내 재입고 시<br>문자 메시지가 발송됩니다.</p>
+                        <ul class="important-li">
+                            <li class="li"><span class="bul">*</span>신청 내역은 마이페이지에서 확인하실 수 있습니다.</li>
+                            <li class="li"><span class="bul">*</span>알림 신청 당시의 상품 구성과 가격은 재입고 시<br>변경될 수 있습니다.</li>
+                        </ul>
+                        <div class="cb-box">
+                            <input type="checkbox" id="cb01" class="cb-square"><label for="cb01">광고성 알림(SMS) 수신에 동의합니다.</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('restockLayer')">확인</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+</body>
+</html>

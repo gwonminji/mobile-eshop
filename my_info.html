@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 마이페이지 회원정보수정 레이어 -->
+        <div class="layer mypage">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">회원 정보 수정</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="mypage-wrap myinfo">
+                    <!-- 정보 수정 영역 -->
+                   <div class="card-list-wrap type-wide">
+                       <div class="card">
+                            <div class="card-head">
+                                <p class="tit">회원 정보</p>
+                            </div>
+                            <div class="card-body">
+                                <div class="ip-box-wrap">
+                                    <p class="tit">이름</p>
+                                    <div class="form-box">
+                                        <input type="text" class="ip-text" value="홍길동" readonly>
+                                    </div>
+                                    <p class="tit">아이디</p>
+                                    <div class="form-box">
+                                        <input type="text" class="ip-text" value="test1234" readonly>
+                                    </div>
+                                    <p class="tit">비밀번호</p>
+                                    <div class="form-box">
+                                        <input type="password" class="ip-text" placeholder="비밀번호를 입력해주세요">
+                                    </div>
+                                    <p class="tit">비밀번호 확인</p>
+                                    <div class="form-box">
+                                        <input type="password" class="ip-text" placeholder="비밀번호를 한번 더 입력해주세요">
+                                        <p class="txt">*비밀번호는 6~12자 이하 영문 + 숫자로 입력해주세요.</p>
+                                    </div>
+                                    <p class="tit">생년월일</p>
+                                    <div class="form-box num birth">
+                                        <input type="number" class="ip-text" value="1999" readonly="">
+                                        <span class="dash">년</span>
+                                        <input type="number" class="ip-text" value="00" readonly="">
+                                        <span class="dash">월</span>
+                                        <input type="number" class="ip-text" value="00" readonly="">
+                                        <span class="dash last">일</span>
+                                    </div>
+                                    <p class="tit">주소</p>
+                                    <div class="form-box addr">
+                                        <div class="btn-box">
+                                            <input type="text" class="ip-text" readonly="">
+                                            <a href="#none" class="btn-addr"><span>주소 찾기</span></a>
+                                        </div>
+                                        <input type="text" class="ip-text" readonly="">
+                                        <input type="text" class="ip-text" readonly="">
+                                    </div>
+                                    <p class="tit">이메일</p>
+                                    <div class="form-box">
+                                        <input type="text" class="ip-text" value="test1234@gmail.com">
+                                    </div>
+                                    <div class="form-box">
+                                        <input type="checkbox" id="cb01" class="cb-square"><label for="cb01">이메일 수신에 동의합니다. (선택)</label>
+                                    </div>
+                                    <p class="tit">휴대폰 번호</p>
+                                    <div class="form-box num pnum">
+                                        <select name="" id="" class="ip-text so" disabled>
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        <span class="dash"></span>
+                                        <input type="text" class="ip-text" value="">
+                                        <span class="dash"></span>
+                                        <input type="text" class="ip-text" value="">
+                                        <div class="btn-box">
+                                            <a href="#none" class="btn-phone"><span>변경</span></a>
+                                        </div>
+                                    </div>
+                                    <!-- 휴대폰 번호 변경 박스 -->
+                                    <div class="change-num-box">
+                                        <p class="point">휴대폰 변경을 위해 본인 명의의 휴대폰으로<br>본인 인증이 필요합니다.<br>본인 인증 후에는 인증 완료된 번호로 자동 변경됩니다.</p>
+                                        <a href="#none" class="btn-auth"><span>휴대폰 본인 인증</span></a>
+                                    </div>
+                                    <!-- //휴대폰 번호 변경 박스 -->
+                                    <div class="form-box">
+                                        <input type="checkbox" id="cb02" class="cb-square"><label for="cb02">SMS를 통한 상품 및 이벤트 정보 수신 동의</label>
+                                        <p class="txt02">주문 및 배송 정보, 쿠폰, 이벤트 정보 등을 제공 받으실 수 있습니다.<br>수신거부와 상관 없이 반드시 고지 의무가 있는 사항에 대해서는<br>SMS가 발송됩니다.</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                   </div>
+                   <!-- //정보 수정 영역 -->
+                   <!-- 하단 버튼 영역 -->
+                   <div class="bottom-btn-box">
+                       <a href="#none" class="btn black"><span>확인</span></a>
+                   </div>
+                   <!-- //하단 버튼 영역 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04 on"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 마이페이지 회원정보수정 레이어 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".btn-phone").on("click", function(){
+                $(".change-num-box").toggleClass("show");
+            });
+        });
+    </script>
+</body>
+</html>

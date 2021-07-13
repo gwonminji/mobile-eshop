@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 마이페이지 레이어 -->
+        <div class="layer mypage">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기"><span></span></a>
+                <p class="tit">나의 상품평</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="mypage-wrap my-review">
+                    <div class="slide-review-wrap">
+                        <ul class="review-li">
+                            <li class="li on"><a href="#none" data-slide="0">작성 가능 상품평</a></li>
+                            <li class="li"><a href="#none" data-slide="1">내가 쓴 상품평</a></li>
+                        </ul>
+                        <div class="slide-review">
+                            <!-- 작성 가능 상품평 -->
+                            <div class="cont-slide">
+                                <!-- 작성 가능 상품평 리스트 -->
+                                <div class="goods-li-wrap">
+                                    <div class="goods-li">
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="top">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <p class="txt">
+                                                        <span class="txt01">VENUS</span>
+                                                        <span class="txt02">풀 레이스 레이스 더블윙 브라 [A~E컵](SBRD061)</span>
+                                                        <span class="txt03">옵션: 블랙/75/C</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="txt">구매일자: 2021년 03월 03일</span>
+                                                <div class="right-box">
+                                                    <a href="#none" class="btn" onclick="changeContWrite();openCommDialog('layerMyReviewWrite', '', '');"><span>상품평 쓰기</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="top">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <p class="txt">
+                                                        <span class="txt01">VENUS</span>
+                                                        <span class="txt02">풀 레이스 레이스 더블윙 브라 [A~E컵](SBRD061)</span>
+                                                        <span class="txt03">옵션: 블랙/75/C</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="txt">구매일자: 2021년 03월 03일</span>
+                                                <div class="right-box">
+                                                    <a href="#none" class="btn" onclick="openCommDialog('layerMyReviewWrite', '', '');"><span>상품평 쓰기</span></a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                    </div>
+                                </div>
+                                <!-- //작성 가능 상품평 리스트 -->
+                            </div>
+                            <!-- //작성 가능 상품평 -->
+                            <!-- 내가 쓴 상품평 -->
+                            <div class="cont-slide">
+                                <!-- 내가 쓴 상품평 리스트 -->
+                                <div class="goods-li-wrap">
+                                    <div class="goods-li" onclick="openCommDialog('layerMyReview', '', '');">
+                                        <!-- 1세트 -->
+                                        <div class="li">
+                                            <div class="top">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <p class="txt">
+                                                        <span class="txt01">VENUS</span>
+                                                        <span class="txt02">풀 레이스 레이스 더블윙 브라 [A~E컵](SBRD061)</span>
+                                                        <span class="txt03">옵션: 블랙/75/C</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="txt">구매일자: 2021년 03월 03일</span>
+                                                <div class="right-box">
+                                                    <div class="star-box">
+                                                        <span class="ico-star on"></span><!-- 별 on 상태 : on 클래스 추가 -->
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                        <!-- 1세트 -->
+                                        <div class="li" onclick="openCommDialog('layerMyReview', '', '');">
+                                            <div class="top">
+                                                <div class="img-box">
+                                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                                </div>
+                                                <div class="txt-box">
+                                                    <p class="txt">
+                                                        <span class="txt01">VENUS</span>
+                                                        <span class="txt02">풀 레이스 레이스 더블윙 브라 [A~E컵](SBRD061)</span>
+                                                        <span class="txt03">옵션: 블랙/75/C</span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                            <div class="bottom">
+                                                <span class="txt">구매일자: 2021년 03월 03일</span>
+                                                <div class="right-box">
+                                                    <div class="star-box">
+                                                        <span class="ico-star on"></span><!-- 별 on 상태 : on 클래스 추가 -->
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star on"></span>
+                                                        <span class="ico-star"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- //1세트 -->
+                                    </div>
+                                </div>
+                                <!-- //내가 쓴 상품평 리스트 -->
+                            </div>
+                            <!-- //내가 쓴 상품평 -->
+                        </div>
+                    </div>
+                    <!-- 유의사항 -->
+                    <div class="important-box">
+                        <ul class="important-li">
+                            <li class="li"><span class="bul">-</span>배송 중으로 변경 후 <span class="bold">24시간 후부터 상품평 작성이 가능</span>합니다.</li>
+                            <li class="li"><span class="bul">-</span>6개월 이내 주문 건까지 상품평 작성이 가능합니다.</li>
+                            <li class="li"><span class="bul">-</span>한 주문 건에서 동일한 제품을 여러 개 구매 시(옵션이 다른 경우 포함) 상품평은 1건만 작성 가능합니다.</li>
+                            <li class="li"><span class="bul">-</span>상품평 1건 당 <span class="bold">300원의 할인 쿠폰</span>이 지급됩니다.</li>
+                            <li class="li"><span class="bul">-</span>베스트 리뷰 선정 시 <span class="bold">1,000원 할인 쿠폰</span>이 추가 지급됩니다.</li>
+                        </ul>
+                    </div>
+                    <!-- //유의사항 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04 on"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 마이페이지 레이어 -->
+
+        <!-- 레이어 전체 영역 : 내가 쓴 상품평 레이어 -->
+        <div id="layerMyReview" class="layer type-detail mypage layer-myreview">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <p class="tit tal">내가 쓴 상품평</p>
+                <div class="right">
+                    <a href="#none" class="btn-close" title="닫기" onclick="closeCommDialog('layerMyReview');"><span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="myreview-wrap">
+                    <!-- 상품 리스트 -->
+                    <div class="goods-li-wrap">
+                        <div class="goods-li">
+                            <!-- 1세트 -->
+                            <div class="li">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="txt">
+                                        <span class="txt01">레이온 스카프나염 여성 이지웨어세트 (VEPQ002S)</span>
+                                        <span class="txt02">구매일자: 2021년 03월 03일</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //1세트 -->
+                        </div>
+                    </div>
+                    <!-- //상품 리스트 -->
+                    <!-- 뷰 영역 -->
+                    <div class="cont-view">
+                        <!-- 평점 -->
+                        <div class="starbox-wrap">
+                            <div class="starbox">
+                                <span class="ico-star on"></span><!-- on 클래스 추가 -->
+                                <span class="ico-star on"></span>
+                                <span class="ico-star on"></span>
+                                <span class="ico-star on"></span>
+                                <span class="ico-star"></span>
+                            </div>
+                        </div>
+                        <!-- //평점 -->
+                        <div class="form-box">
+                            <input type="text" class="ip-text sq" value="너무 좋습니다!" readonly>
+                        </div>
+                        <div class="form-box ta">
+                            <textarea name="" id="" class="ta-cont" readonly>가격도 싸고 너무 좋아요! 가성비 최고!!</textarea>
+                        </div>
+                    </div>
+                    <!-- //뷰 영역 -->
+                    <!-- 이미지 영역 -->
+                    <div class="img-area">
+                        <div class="img-box">
+                            <div class="img-in">
+                                <img src="assets/images/img_review.png" alt="">
+                            </div>
+                            <!-- <img src="assets/images/img_review.png" alt=""> -->
+                        </div>
+                        <div class="img-box">
+                            <div class="img-in">
+                            <img src="assets/images/img_review_noimg.png" alt="">
+                            </div>
+                            <!-- <img src="assets/images/img_review_noimg.png" alt=""> -->
+                        </div>
+                        <div class="img-box">
+                            <div class="img-in">
+                                <img src="assets/images/img_review_noimg.png" alt="">
+                            </div>
+                            <!-- <img src="assets/images/img_review_noimg.png" alt=""> -->
+                        </div>
+                    </div>
+                    <!-- //이미지 영역 -->
+                    <!-- 하단 버튼 영역 -->
+                    <div class="btn-box bottom">
+                        <a href="#none" class="btn black" onclick="closeCommDialog('layerMyReview');changeContModify();openCommDialog('layerMyReviewWrite', '', '')"><span>수정하기</span></a>
+                    </div>
+                    <!-- //하단 버튼 영역 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+        </div>
+        <!-- //레이어 전체 영역 : 내가 쓴 상품평 레이어 -->
+
+        <!-- 레이어 전체 영역 : 상품평 등록/수정 레이어 -->
+        <div id="layerMyReviewWrite" class="layer type-detail mypage layer-myreview">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <p class="tit tal">상품평 등록</p>
+                <div class="right">
+                    <a href="#none" class="btn-close" title="닫기" onclick="closeCommDialog('layerMyReviewWrite');"><span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <div class="myreview-wrap">
+                    <!-- 상품 리스트 -->
+                    <div class="goods-li-wrap">
+                        <div class="goods-li">
+                            <!-- 1세트 -->
+                            <div class="li">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item03.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <p class="txt">
+                                        <span class="txt01">레이온 스카프나염 여성 이지웨어세트 (VEPQ002S)</span>
+                                        <span class="txt02">구매일자: 2021년 03월 03일</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- //1세트 -->
+                        </div>
+                    </div>
+                    <!-- //상품 리스트 -->
+                    <!-- 뷰 영역 -->
+                    <div class="cont-view">
+                        <!-- 평점 -->
+                        <div class="starbox-wrap type-txt">
+                            <p class="txt01">받으신 상품은 어떠셨나요?</p>
+                            <div id="userStar" class="starbox type02">
+                                <span class="ico-star"><!-- 별 반개씩 증가 , 증가시 on 클래스 추가-->
+                                    <span class="left on"></span>
+                                    <span class="right on"></span>
+                                </span>
+                                <span class="ico-star">
+                                    <span class="left on"></span>
+                                    <span class="right on"></span>
+                                </span>
+                                <span class="ico-star">
+                                    <span class="left on"></span>
+                                    <span class="right on"></span>
+                                </span>
+                                <span class="ico-star">
+                                    <span class="left on"></span>
+                                    <span class="right on"></span>
+                                </span>
+                                <span class="ico-star">
+                                    <span class="left"></span>
+                                    <span class="right"></span>
+                                </span>
+                            </div>
+                            <p class="txt02">별표를 탭하여 별점 남기기</p>
+                        </div>
+                        <!-- //평점 -->
+                        <div class="form-box">
+                            <!-- 등록시 노출 -->
+                            <input type="text" id="myReviewTitleWrite" class="ip-text sq" value="" placeholder="제목을 입력하세요">
+                            <!-- //등록시 노출 -->
+
+                            <!-- 수정시 노출 -->
+                            <input type="text" id="myReviewTitleModify" class="ip-text sq" value="너무 좋습니다!" placeholder="제목을 입력하세요">
+                            <!-- //수정시 노출 -->
+                        </div>
+                        <div class="form-box ta">
+                            <!-- 등록시 노출 -->
+                            <textarea name="" id="myReviewContentWrite" class="ta-cont" placeholder="개인정보 보호를 위해 주민번호, 휴대폰 번호 등을 입력하지 않도록 주의하세요.&#13;&#10;아래와 같은 내용의 글은 관리자에 의해 임의 삭제될 수 있습니다.&#13;&#10;- 저작권 침해/음란/욕설/비방글&#13;&#10;- 개인정보 유출/이름, 아이디, 휴대폰번호, 주민번호"></textarea>
+                            <p class="txt-length type-write"><span>0</span> / 1,000자</p>
+                            <!-- //등록시 노출 -->
+
+                            <!-- 수정시 노출 -->
+                            <textarea name="" id="myReviewContentModify" class="ta-cont" placeholder="개인정보 보호를 위해 주민번호, 휴대폰 번호 등을 입력하지 않도록 주의하세요.&#13;&#10;아래와 같은 내용의 글은 관리자에 의해 임의 삭제될 수 있습니다.&#13;&#10;- 저작권 침해/음란/욕설/비방글&#13;&#10;- 개인정보 유출/이름, 아이디, 휴대폰번호, 주민번호">가격도 싸고 너무 좋아요! 가성비 최고!!</textarea>
+                            <p class="txt-length type-modify"><span>0</span> / 1,000자</p>
+                            <!-- //수정시 노출 -->
+                        </div>
+                    </div>
+                    <!-- //뷰 영역 -->
+                    <!-- 이미지 영역 -->
+                    <p class="tit-imgarea">사진 등록</p>
+                    <div class="img-area">
+                        <div class="img-box add">
+                            <div class="img-cont">
+                                <!-- <img src="assets/images/img_review02.png" class="img-thumb" alt="">
+                                <button type="button" class="btn-del-img"><span></span></button> -->
+                                <!-- <img src="assets/images/img_review_add.png" class="btn-add-img" alt=""> -->
+                                <div class="ip-file-box">
+                                    <input type="file" name="file" class="ip-file" accept="image/*">
+                                </div>
+                                <img src="assets/images/5.jpg" class="img-thumb" alt="">
+                                <button type="button" class="btn-del-img"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="img-box add">
+                            <div class="img-cont">
+                                <!-- <img src="assets/images/img_review_add.png" class="btn-add-img" alt="">
+                                <div class="ip-file-box">
+                                    <input type="file" name="file" class="ip-file">
+                                </div> -->
+                                <div class="ip-file-box">
+                                    <input type="file" name="file" class="ip-file" accept="image/*">
+                                </div>
+                                <img src="assets/images/2.jpg" class="img-thumb" alt="">
+                                <button type="button" class="btn-del-img"><span></span></button>
+                            </div>
+                        </div>
+                        <div class="img-box add">
+                            <div class="img-cont">
+                                <!-- <img src="assets/images/img_review_add.png" class="btn-add-img" alt="">
+                                <div class="ip-file-box">
+                                    <input type="file" name="file" class="ip-file">
+                                </div> -->
+                                <div class="ip-file-box">
+                                    <input type="file" name="file" class="ip-file" accept="image/*">
+                                </div>
+                                <img src="assets/images/1.jpg" class="img-thumb" alt="">
+                                <button type="button" class="btn-del-img"><span></span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- //이미지 영역 -->
+                    <!-- 하단 버튼 영역 -->
+                    <div class="btn-box bottom">
+                        <a href="#none" class="btn black" onclick="closeCommDialog('layerMyReviewWrite');"><span>확인</span></a>
+                    </div>
+                    <!-- //하단 버튼 영역 -->
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+        </div>
+        <!-- //레이어 전체 영역 : 상품평 등록/수정 레이어 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+    $(document).ready(function(){
+        //리뷰 슬라이드
+        $(".slide-review").slick({
+            dots: false,
+            prevArrow: false,
+            nextArrow: false,
+            speed: 200,
+            slidesToShow: 1,
+            infinite: false
+        });
+
+        //슬라이드 메뉴 리스트 클릭
+        // $(".review-li .li").on("click", function(){
+        //     $(this).addClass("on");
+        //     $(this).siblings().removeClass("on");
+        // });
+
+        $(".review-li .li a").on("click", function(e){
+            e.preventDefault();
+            $(".review-li .li").removeClass("on");
+            $(this).parent().addClass("on");
+            var slideno = $(this).attr("data-slide");
+            $(".slide-review").slick('slickGoTo', slideno);
+        });
+
+        //슬라이드 메뉴 클릭
+        // $(".review-li .li a").click(function(e) {
+        //     e.preventDefault();
+        //     var slideno = $(this).attr("data-slide");
+        //     $(".slide-review").slick('slickGoTo', slideno);
+        // });
+
+        //슬라이드 change시 해당 메뉴 on 적용
+        $(".slide-review").on('afterChange', function(event, slick, currentSlide, nextSlide){
+            $(".review-li .li").each(function(i){
+                if(currentSlide == i){
+                    $(".review-li .li").removeClass("on");
+                    $(this).addClass("on");
+                }
+            });
+        });
+
+        //상품평 별점 클릭 이벤트 : 왼쪽 별
+        $("#userStar .ico-star .left").on("click", function(){
+            var idx = $(this).parent().index();
+            var starLength = $("#userStar .ico-star").length;
+
+            $("#userStar .ico-star .left").removeClass("on");
+            $("#userStar .ico-star .right").removeClass("on");
+
+            for(var i=0; i < starLength; i++){
+                if(idx == i){
+                    $(this).parent().prevAll().children().addClass("on");
+                    $(this).addClass("on");
+                }
+            }
+        });
+        //상품평 별점 클릭 이벤트 : 오른쪽 별
+        $("#userStar .ico-star .right").on("click", function(){
+            var idx = $(this).parent().index();
+            var starLength = $("#userStar .ico-star").length;
+
+            $("#userStar .ico-star .left").removeClass("on");
+            $("#userStar .ico-star .right").removeClass("on");
+
+            for(var i=0; i < starLength; i++){
+                if(idx == i){
+                    $(this).parent().prevAll().children().addClass("on");
+                    $(this).addClass("on");
+                    $(this).siblings().addClass("on");
+                }
+            }
+        });
+
+        //등록폼 textarea 입력된 글자수 체크
+        $("#myReviewContentWrite").keyup(function (e){
+            var content = $(this).val().length;
+            content = content.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+            $(".txt-length.type-write").html("<span>" + content + "</span> / 1,000자");
+        });
+        $("#myReviewContentWrite").keyup();
+
+        //수정폼 textarea 입력된 글자수 체크
+        $("#myReviewContentModify").keyup(function (e){
+            var content = $(this).val().length;
+            content = content.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+            $(".txt-length.type-modify").html("<span>" + content + "</span> / 1,000자");
+        });
+        $("#myReviewContentModify").keyup();
+
+        //리뷰 이미지 삭제
+        $("body").on("click", ".btn-del-img", function(){
+            var target = $(this).prev();
+            var addImg = "<img src='assets/images/img_review_add.png' class='btn-add-img' alt=''>";
+            target.remove();
+            $(this).parent().append(addImg);
+            $(this).remove();
+        });
+
+        //리뷰 이미지 등록
+        var parentIdx;
+        $("body").on("click", ".ip-file-box", function(){
+            parentIdx = $(this).parent().parent().index() + 1;
+            console.log("부모", parentIdx);
+        });
+
+        $("body").on("change", ".ip-file", function(){
+            $(this).parent().siblings(".btn-add-img").remove();
+            $(this).parent().siblings(".btn-del-img").remove();
+            readImage(this, parentIdx);
+
+            // console.log("onchange 파일 값", $(this).val());
+        });
+    });
+    //파일 읽어오기
+    function readImage(input, parentIdx){
+        if (input.files && input.files[0]) {
+            // console.log("읽은 파일값", input.files[0]);
+            var reader = new FileReader();
+
+            reader.onload = function(e) {
+                $(".img-box.add:nth-child(" + parentIdx + ") .img-cont .img-thumb").remove();
+                var addImg = "<img src=" + e.target.result + " class='img-thumb' alt=''>";
+                var addRemoveBtn = "<button type='button' class='btn-del-img'><span></span></button>";
+                $(".img-box.add:nth-child(" + parentIdx + ") .img-cont").append(addImg);
+                $(".img-box.add:nth-child(" + parentIdx + ") .img-cont").append(addRemoveBtn);
+            }
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    //상품평 수정폼 -> 등록폼으로 내용 변경
+    function changeContWrite(){
+        $("#layerMyReviewWrite .layer-head .tit").text("상품평 등록");
+        $("#layerMyReviewWrite #myReviewTitleWrite").show();
+        $("#layerMyReviewWrite #myReviewContentWrite").show();
+        $(".txt-length.type-write").show();
+        $("#layerMyReviewWrite #myReviewTitleModify").hide();
+        $("#layerMyReviewWrite #myReviewContentModify").hide();
+        $(".txt-length.type-modify").hide();
+    }
+    
+    //상품평 등록폼 -> 수정폼으로 내용 변경
+    function changeContModify(){
+        $("#layerMyReviewWrite .layer-head .tit").text("상품평 수정");
+        $("#layerMyReviewWrite #myReviewTitleWrite").hide();
+        $("#layerMyReviewWrite #myReviewContentWrite").hide();
+        $(".txt-length.type-write").hide();
+        $("#layerMyReviewWrite #myReviewTitleModify").show();
+        $("#layerMyReviewWrite #myReviewContentModify").show();
+        $(".txt-length.type-modify").show();
+    }
+    </script>
+</body>
+</html>

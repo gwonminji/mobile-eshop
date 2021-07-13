@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 : 오프라인 쿠폰 등록 -->
+        <div id="mycouponLayer" class="layer-d dialog mycoupon show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">오프라인 쿠폰 등록</p>
+                    <span class="btn-close" onclick="closeCommDialog('mycouponLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="mycoupon-box">
+                        <p class="txt">발급 받으신 쿠폰 코드를 입력해주세요.</p>
+                        <div class="form-box">
+                            <input type="text" class="ip-text" value="" placeholder="쿠폰 코드를 입력해주세요">
+                        </div>
+                        <div class="btn-box">
+                            <a href="#none" class="btn"><span>등록</span></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 : 오프라인 쿠폰 등록 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+</body>
+</html>

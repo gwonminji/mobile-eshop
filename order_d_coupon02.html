@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>
+    <div class="wrap type-layer">
+        <!-- 공통 다이얼로그 영역 -->
+        <div id="couponeLayer" class="layer-d dialog coupon show">
+            <div class="dimmed"></div>
+            <div class="dialog-box">
+                <!-- 다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+                <div class="dialog-head">
+                    <p class="tit">장바구니 쿠폰 선택</p>
+                    <span class="btn-close" onclick="closeCommDialog('couponeLayer')"></span> 
+                </div> 
+                <!-- //다이얼로그 헤더 : 해당 영역 불필요시 제거 -->
+
+                <!-- 다이얼로그 내용 출력 영역 -->
+                <div class="dialog-body">
+                    <div class="coupon-box">
+                        <ul class="coupon-li">
+                            <li class="li">적용하실 쿠폰을 선택하시면, 할인금액이 자동으로<br>입력됩니다.</li>
+                            <li class="li">보유하신 전체 쿠폰 조회는 "마이페이지 > 쿠폰조회"<br>에서 가능합니다.</li>
+                            <li class="li">쿠폰은 중복해서 사용하실 수 없습니다.</li>
+                            <li class="li">주문 취소 시 사용된 쿠폰은 결제 여부 및 배송 여부와<br>관계없이 소멸되며, 복구 복원되지 않습니다.</li>
+                            <li class="li">할인 금액 쿠폰의 금액이 실제 주문 금액보다 클 경우<br>에는 사용이 불가능합니다.</li>
+                        </ul>
+                    </div>
+                    <div class="coupon-so-box">
+                        <div class="so-box">
+                            <select>
+                                <option value="">쿠폰을 선택해주세요.</option>
+                                <option value="">쿠폰1</option>
+                                <option value="">쿠폰2</option>
+                            </select>
+                            <p class="txt">쿠폰 할인 금액<span>0</span>원</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //다이얼로그 내용 출력 영역 -->
+
+                <!-- 다이얼로그 풋터 : 버튼 영역 -->
+                <!-- 버튼 1개일 때 full 클래스 추가 -->
+                <div class="dialog-foot full">
+                    <button type="button" class="btn-ok" onclick="closeCommDialog('couponeLayer')">쿠폰 적용</button>
+                </div>
+                <!-- //버튼 1개일 때 -->
+                <!-- //다이얼로그 풋터 : 버튼 영역 -->
+            </div>
+        </div>
+        <!-- //공통 다이얼로그 영역 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+</body>
+</html>

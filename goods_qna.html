@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins/slick.min.js"></script>
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 상품 Q&A -->
+        <div class="layer type-detail qna">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <p class="tit tal">상품 Q&A</p>
+                <div class="right">
+                    <a href="#none" class="btn-close" title="닫기" onclick="history.go(-1);"><span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body bg-white">
+                <div class="card-list-wrap type-wide">
+                    <div class="card">
+                        <div class="card-body">
+                            <div class="qna-box">
+                                <!-- 상품 영역 -->
+                                <div class="item">
+                                    <div class="img-box">
+                                        <img src="assets/images/img_thumb_item03.png">
+                                    </div>
+                                    <div class="txt-box">
+                                        <p class="txt01">레이온 스카프나염 여성 이지웨어세트<br>(VEPQ002S)</p>
+                                        <p class="txt02"><span class="bold">79,000</span>원</p>
+                                    </div>
+                                </div>
+                                <!-- //상품 영역 -->
+                                <!-- 문의 입력 영역 -->
+                                <div class="ip-area">
+                                    <input type="text" name="" id="" class="ip-tit" value="제품 상하의 실측사이즈가 궁금합니다." maxlength="30">
+                                    <textarea name="" id="content" class="ta-cont" maxlength="1000">이지웨어 세트 실측 사이즈가 궁금합니다. 이지웨어 세트 실측 사이즈가 궁금합니다.</textarea>
+                                    <p class="txt-length"><span>0</span> / 1,000자</p>
+                                </div>
+                                <!-- //문의 입력 영역 -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+            <!-- 레이어 풋터 -->
+            <div class="layer-foot">
+                <a href="#none" class="btn-ok"><span class="bold">확인</span></a>
+            </div>
+            <!-- //레이어 풋터 -->
+        </div>
+        <!-- //레이어 전체 영역 : 상품 Q&A -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#content").keyup(function (e){
+                var content = $(this).val().length;
+                content = content.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+                $(".txt-length").html("<span>" + content + "</span> / 1,000자");
+            });
+
+            $("#content").keyup();
+        });
+    </script>
+</body>
+</html>

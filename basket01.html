@@ -1,0 +1,309 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=no">
+    <title>VENUS e-Shop</title>
+    <link rel="stylesheet" href="assets/css/reset-mobile.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/sub.css">
+    <script type="text/javascript" src="assets/js/plugins/jquery.min.js"></script>
+</head>
+<body>    
+    <div class="wrap type-layer">
+        <!-- 레이어 전체 영역 : 장바구니 레이어 -->
+        <div class="layer basket">
+            <!-- 레이어 헤더 -->
+            <div class="layer-head">
+                <a href="#none" class="btn-back" title="뒤로가기" onclick="history.back();"><span></span></a>
+                <p class="tit">장바구니</p>
+                <div class="right">
+                    <a href="#none" class="btn-search" title="검색"><span></span></a>
+                    <a href="#none" class="btn-basket" title="장바구니"><span><span class="badge">10</span></span></a>
+                </div>
+            </div>
+            <!-- //레이어 헤더 -->
+            <!-- 레이어 본문 -->
+            <div class="layer-body">
+                <!-- 단계 -->
+                <div class="step-wrap">
+                    <p class="tit">주문/결제 단계</p>
+                    <div class="step-box">
+                        <!--
+                            완료 단계인 경우 : checked 클래스 추가
+                            현재 단계인 경우 : active 클래스 추가
+                        -->
+                        <div class="step step01">
+                            <span class="round active"><span></span></span>
+                            <p class="txt-step">STEP 01</p>
+                            <p class="txt">장바구니</p>
+                        </div>
+                        <div class="step step02">
+                            <span class="round"><span></span></span>
+                            <p class="txt-step">STEP 02</p>
+                            <p class="txt">주문/결제</p>
+                        </div>
+                        <div class="step step03">
+                            <span class="round"><span></span></span>
+                            <p class="txt-step">STEP 03</p>
+                            <p class="txt">주문완료</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- //단계 -->
+                <div class="card-list-wrap">
+                    <div class="card all">
+                        <input type="checkbox" id="cb-all" class="cb cb-all" name="cb-all"><label for="cb-all">전체선택 (2/2)</label>
+                        <div class="btn-box">
+                            <button class="btn-del-selected">선택삭제</button>
+                        </div>
+                    </div>
+                    <!-- 아이템 -->
+                    <div class="card">
+                        <div class="card-head d-t">
+                            <div class="d-tc">
+                                <input type="checkbox" id="cb-01" class="cb" name="cb-item"><label for="cb-01">풀 레이스 더블윙 브라[A~E컵](SBRD061)<br>텍스트두줄텍스트두줄</label>
+                                <div class="btn-box">
+                                    <button class="btn-del-item"><span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <!-- 210210 퍼블수정 -->
+                            <a href="http://www.naver.com" class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <ul class="detail">
+                                        <li class="li">옵션 : 블랙/75/C</li>
+                                        <li class="li">수량 : 1개</li>
+                                    </ul>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn-options soldout">옵션/수량 변경</button><!-- 품절 시 soldout 클래스 추가 -->
+                                    </div>
+                                </div>
+                            </a>
+                            <!-- div 추가 : 품절인 경우 노출 -->
+                            <div class="txt-box soldout">
+                                <p class="txt01">선택하신 옵션은 품절되었습니다.</p>
+                                <p class="txt02">옵션/수량을 변경해주세요.</p>
+                            </div>
+                            <!-- //div 추가 : 품절인 경우 노출 -->
+                            <!-- //210210 퍼블수정 -->
+                        </div>
+                        <div class="card-foot">
+                            <ul class="price">
+                                <li class="li"><span class="left">판매가</span><span class="right">43,000원</span></li>
+                                <li class="li"><span class="left">구매가</span><span class="right red">43,000원</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //아이템 -->
+                    <!-- 아이템 -->
+                    <div class="card">
+                        <div class="card-head d-t">
+                            <div class="d-tc">
+                                <input type="checkbox" id="cb-02" class="cb" name="cb-item"><label for="cb-02">풀 레이스 더블윙 브라[A~E컵](SBRD061)</label>
+                                <div class="btn-box">
+                                    <button class="btn-del-item"><span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <a href="#none" class="item-info">
+                                <div class="img-box">
+                                    <img src="assets/images/img_thumb_item.png" alt="">
+                                </div>
+                                <div class="txt-box">
+                                    <ul class="detail">
+                                        <li class="li">옵션 : 블랙/75/C</li>
+                                        <li class="li">수량 : 1개</li>
+                                    </ul>
+                                    <div class="btn-box">
+                                        <button type="button" class="btn-options">옵션/수량 변경</button>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="card-foot">
+                            <ul class="price">
+                                <li class="li"><span class="left">판매가</span><span class="right">43,000원</span></li>
+                                <li class="li"><span class="left">구매가</span><span class="right red">43,000원</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //아이템 -->
+                    <ul class="noti-small">
+                        <li class="li"><span class="bul"></span>장바구니에 저장된 상품은 한달 간 저장됩니다.</li>
+                        <li class="li"><span class="bul"></span>저장기간 및 저장갯수를 초과, 경과한 상품은 오래 저장된 상품을<br>기준으로 자동 삭제됩니다.</li>
+                        <li class="li"><span class="bul"></span>상품 선택 후 장바구니 비우기 버튼을 클릭하시면<br>해당 선택 상품만 장바구니에서 삭제됩니다.</li>
+                        <li class="li"><span class="bul"></span>판매종료, 생산중단된 상품은 장바구니에서 자동 삭제되며,<br>품절 및 할인율이 변경될 수 있으니, 주문 전에 꼭 확인하시기 바랍니다.</li>
+                    </ul>
+
+                    <div class="price-info-box">
+                        <ul class="price list01">
+                            <li class="li">총 상품금액<span class="right"><span class="bold">86,000</span>원</li>
+                            <li class="li">+ 배송비<span class="right"><span class="bold">2,500</span>원</span></li>
+                        </ul>
+                        <ul class="price list02">
+                            <li class="li">결제예상금액<span class="right red"><span class="bold">88,500</span>원</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- //레이어 본문 -->
+            <!-- 레이어 풋터 -->
+            <div class="layer-foot">
+                <a href="#none" class="btn-ok"><span class="bold">45,500</span>원 주문하기</a>
+            </div>
+            <!-- //레이어 풋터 -->
+
+            <!-- 풋터 -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="inner">
+                        <p class="tit">고객센터</p>
+                        <p class="num">070-4820-4793</p>
+                        <p class="info">
+                            <span>평일 10:00 ~ 17:00 (점심 12:00 ~ 13:00)</span>
+                            <span>토/일요일, 공휴일은 휴무</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="footer-btn-box">
+                    <a href="#none" title="공지사항">공지사항</a>
+                    <a href="#none" title="고객센터">고객센터</a>
+                    <a href="#none" title="문의안내">문의안내</a>
+                </div>
+                <div class="footer-company">
+                    <div class="inner">
+                        <div class="info-box">
+                            <p class="info">
+                                <span>상호: (주)신영와코루</span>
+                                <span>대표이사: 이의평, 이성원</span>
+                            </p>
+                            <p class="info">
+                                <span>사업자등록번호: 119-81-01559</span>
+                                <span>통신판매번호 제 18-1338</span>
+                            </p>
+                            <p class="info">
+                                <span>주소: 서울시 금천구 가산디지털 1로 104</span>
+                                <span>팩스: 02-869-5613</span>
+                            </p>
+                        </div>
+                        <div class="link-box">
+                            <a href="#none" class="bold" title="개인정보취급방침">개인정보취급방침</a>
+                            <a href="#none" title="이용약관">이용약관</a>
+                            <a href="#none" title="회사소개">회사소개</a>
+                        </div>
+                        <div class="img-box-wrap">
+                            <div class="img-box">
+                                <img src="assets/images/img_foot01.png" class="img01" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot02.png" class="img02" alt="">
+                            </div>
+                            <div class="img-box">
+                                <img src="assets/images/img_foot03.png" class="img03" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-select-box">
+                    <div class="inner">
+                        <div class="left">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">FAMILY SITE</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li site" name="" id="">
+                                <option>FAMILY SITE</option>
+                                <option>Shinyoungwacoal</option>
+                                <option>VENUS</option>
+                                <option>Wacoal</option>
+                                <option>ORLFA</option>
+                                <option>Solb</option>
+                                <option>Motherpia</option>
+                                <option>Remamma</option>
+                                <option>Shinyoung Stocking</option>
+                            </select>
+                        </div>
+                        <div class="right">
+                            <!-- <ul class="select-li">
+                                <li class="li"><span class="txt">BLOG</span><span class="ico-arr"></span></li>
+                            </ul> -->
+                            <select class="select-li blog" name="" id="">
+                                <option>BLOG</option>
+                                <option>Shinyoungwacoal Blog</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+            <!-- //풋터 -->
+            <!-- 메뉴바 -->
+            <div class="menubar">
+                <ul class="menu-li">
+                    <li class="menu menu01"><a href="#none">카테고리</a></li>
+                    <li class="menu menu02"><a href="#none">주문배송</a></li>
+                    <li class="menu menu03 on"><a href="#none">홈</a></li><!-- 해당 메뉴 활성화시 on 클래스 추가 -->
+                    <li class="menu menu04"><a href="#none">마이페이지</a></li>
+                    <li class="menu menu05"><a href="#none">최근 본/찜</a></li>
+                </ul>
+            </div>
+            <!-- //메뉴바 -->
+            <!-- top 버튼 -->
+            <button type="button" class="btn-top"><span>TOP</span></button>
+            <!-- //top 버튼 -->
+        </div>
+        <!-- //레이어 전체 영역 : 장바구니 레이어 -->
+    </div>
+    <script type="text/javascript" src="assets/js/ui-sub.js"></script>
+    <script>
+        $(document).ready(function(){
+            //전체선택, 전체해제
+            $("input:checkbox[name=cb-all]").on("change", function(){
+                if($("input:checkbox[name=cb-all]").is(":checked") == true){
+                    $("input:checkbox[name=cb-item]").prop("checked", true);
+                }else{
+                    $("input:checkbox[name=cb-item]").prop("checked", false);
+                }
+            });
+
+            //아이템 체크해제 시 전체선택 체크해제
+            $("input:checkbox[name=cb-item]").on("change", function(){
+                $("input:checkbox[name=cb-item]").each(function(index){
+                    var total = $("input:checkbox[name=cb-item]").length;
+                    var checked = $("input:checkbox[name=cb-item]:checked").length;
+                    if(total > checked){
+                        $("input:checkbox[name=cb-all]").prop("checked", false);
+                    }else if(total == checked){
+                        $("input:checkbox[name=cb-all]").prop("checked", true);
+                    }
+                });
+            });
+
+            //선택삭제 버튼
+            $(".btn-del-selected").on("click", function(){
+                if($("input:checkbox[name=cb-item]").is(":checked") == true){
+                    var target = $("input:checkbox[name=cb-item]:checked");
+                    $(target).closest(".card").remove();
+                    $("input:checkbox[name=cb-all]").prop("checked", false);
+                }
+            });
+
+            //아이템 x버튼(개별 삭제)
+            $(".basket .btn-box .btn-del-item").on("click", function(){
+                $(this).closest(".card").remove();
+            });
+
+            //옵션/수량 변경 버튼 클릭 시 상위 anchor 이벤트 전파 제거
+            $(".btn-options").on("click", function(){
+                return false;
+            });
+        });
+    </script>
+</body>
+</html>

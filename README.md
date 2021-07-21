@@ -11,7 +11,7 @@
 7. 로그인 : http://gwonminji.github.io/mobile-eshop/login01.html
 8. 마이페이지 : http://gwonminji.github.io/mobile-eshop/my.html
 9. 주문서 : http://gwonminji.github.io/mobile-eshop/order_form01.html
-10. 주문/배송 : http://gwonminji.github.io/mobile-eshop/orderdeliv01.html
+10. 최근 본 상품/찜 상품 : http://gwonminji.github.io/mobile-eshop/like01.html
 11. 검색 : http://gwonminji.github.io/mobile-eshop/search04.html
 12. 상품평 : http://gwonminji.github.io/mobile-eshop/my_review.html
 

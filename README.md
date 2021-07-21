@@ -3,7 +3,7 @@
 
 ## 샘플 URL
 1. 메인 : http://gwonminji.github.io/mobile-eshop/home.html
-2. 장바구니 : http://gwonminji.github.io/mobile-eshop/basket03.html
+2. 장바구니 : http://gwonminji.github.io/mobile-eshop/basket01.html
 3. 카테고리 : http://gwonminji.github.io/mobile-eshop/category.html
 4. 고객센터 : http://gwonminji.github.io/mobile-eshop/cscenter.html
 5. 상품상세 : http://gwonminji.github.io/mobile-eshop/goods_detail01.html
